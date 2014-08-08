@@ -1,0 +1,30 @@
+	<div class="wrap">
+	<div class="logo"><%= image_tag "logo_elgraficocom.png" , width: 514 , height: 77 %></div>
+	<div class="table">
+	<div class="app-btns">
+	<span>Descarga app</span>
+	  <ul>
+	    <li class="android-btn" target="_blank"><a href="http://www.elgrafico.com/apps/" target="_blank"></a></li>
+	    <li class="apple-btn" target="_blank"><a href="http://www.elgrafico.com/apps/" target="_blank"></a></li>
+	    <li class="window-btn" target="_blank"><a href="http://www.elgrafico.com/apps/" target="_blank"></a></li>
+	  </ul>
+	</div>
+
+	<div class="portada-kiosko">
+	<a href="http://kiosko.laprensagrafica.com/index.html?tpu=El%20Grafico" target="_blank"><img src="http://kiosko.laprensagrafica.com/xml_epaper/El%20Grafico/portadathmb.jpg" alt="" width="100"></a> 
+	</div>
+	</div>
+
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="wrap menumedia">
+	<ul>
+	    <li><%= link_to "Portada" , root_url %></li>
+	    <li><%= link_to "Videos" , seccion_path('Videos') %></li>
+	    <li><%= link_to "Galerías" , seccion_path('Galerias') %></li>
+	    <li><%= link_to "Audios" , seccion_path('Audios') %></li>
+	    <li><%= link_to "+ Vistos" , seccion_path('videos') %></li>
+	    <li><%= link_to "+ Comentados" , seccion_path('videos') %></li>
+	</ul>
+	</div>

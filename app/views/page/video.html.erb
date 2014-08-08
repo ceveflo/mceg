@@ -1,0 +1,46 @@
+<div class="content">
+
+    <%= render partial:"header"%>
+
+
+<div class="wrap">
+    <div class="videop">
+        <!-- video bightcove -->
+        <%= render partial: "playerbrightcove" , locals: { video_id: @video.media_files[0].url_file } %>
+      
+        <!-- end -->
+
+    </div>
+
+    <div class="info">
+    <h2><%= @video.title%></h2>
+    <p id="tags_p">
+    Tags: 
+        <%=raw get_tags(@video.media_tag)%>
+    </p>
+    <span class='st_sharethis_hcount' displayText='ShareThis'></span>
+    <span class='st_facebook_hcount' displayText='Facebook'></span>
+    <span class='st_twitter_hcount' displayText='Tweet'></span>
+    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+    <span class='st_pinterest_hcount' displayText='Pinterest'></span>
+    <span class='st_email_hcount' displayText='Email'></span>
+    </div>
+    <div class="clearfix"></div>
+    <div class="azul">
+    <div class="coments">
+        <%= render partial: "disqus" %>
+    </div>
+    <div id="more">
+    <div id="container">
+
+            <%= render partial: "griditems" , locals: { archive: @related}%>
+    </div>
+    </div>
+
+
+    </div>
+
+</div>
+
+
+</div>

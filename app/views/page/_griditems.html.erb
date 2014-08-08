@@ -1,0 +1,10 @@
+<% archive.each do |item| %>
+		<div class="grid <%= type_archive(item.media_type) %>">
+		<%=raw is_destacado(@destacado , item.id) %>	
+		<div class="imgholder">
+		<%= link_to image_tag(blank_image(item))  , {:controller=>'page' , :action=>type_archive(item.media_type) , :slug=>item.slug_name} %>
+		</div>
+		<%= link_to item.title , {:controller=>'page' , :action=>type_archive(item.media_type) , :slug=>item.slug_name}  , class:'link' %></a>
+		<div class="meta"><%= item.date_publication.strftime("%a %d %m , %Y") %></div>
+		</div>
+	<% end %>

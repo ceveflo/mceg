@@ -1,0 +1,33 @@
+<div class="content overflow">
+
+    <%= render partial:"header"%>
+
+<div class="wrap"> 
+    <ul id="sidebar" class="sidebar">
+        <h1 class="canal_titulo">Categorías</h1>
+
+        <li class="first  current" style="margin-bottom:10px;">
+            <%= getParentUrl(params[:tipo]) %>
+        <ul class="sub_sidebar">
+            <% @categories.each_with_index do |item, index| %>
+            <li class=" <%= "first_channel" unless index == 0 %>">
+                <%= link_to item.name , { controller: 'page' , action: :section , tipo: params[:tipo] , category: item.tag} %>
+            </li>
+            <% end %>
+       
+        </ul>
+        </li>
+    </ul>
+
+<section id="wrapper">
+	
+<div id="container" class="seccion">
+
+    <%= render partial: "griditems" , locals: { archive: @archive}%>
+</div>
+
+</section>
+
+</div>
+
+</div>
