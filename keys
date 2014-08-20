@@ -1,0 +1,2 @@
+heroku config:add DATABASE_URL=mysql2://mculpg:HHga8723k3e++@174.143.186.98:3306/mcEG
+heroku config:add SHARED_DATABASE_URL=mysql2://mculpg:HHga8723k3e++@174.143.186.98:3306/mcEG

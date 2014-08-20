@@ -18,13 +18,13 @@
 	</div>
 	<div class="clearfix"></div>
 
-	<div class="wrap menumedia">
+	<div class="wrap menumedia" data-no-turbolink>
 	<ul>
 	    <li><%= link_to "Portada" , root_url %></li>
 	    <li><%= link_to "Videos" , seccion_path('Videos') %></li>
 	    <li><%= link_to "Galerías" , seccion_path('Galerias') %></li>
 	    <li><%= link_to "Audios" , seccion_path('Audios') %></li>
-	    <li><%= link_to "+ Vistos" , seccion_path('videos') %></li>
-	    <li><%= link_to "+ Comentados" , seccion_path('videos') %></li>
+	    <li><%= link_to "+ Vistos" , masvistos_path() %></li>
+	    <li><%= link_to "+ Comentados" , mascomentados_path() %></li>
 	</ul>
 	</div>

@@ -1,12 +1,15 @@
-$(document).ready(function() {
-	//blocksit define
-	$(window).load( function() {
+var do_on_load;
+var repage;
+do_on_load = function() {
+
+	repage =  function() {
 		$('#container').BlocksIt({
 			numOfCol: 3,
 			offsetX: 8,
 			offsetY: 8
 		});
-	});
+	};
+	
 	
 	//window resize
 	var currentWidth = 760;
@@ -37,4 +40,10 @@ $(document).ready(function() {
 			});
 		}
 	});
-});
+
+	$(window).load(repage)
+	$(window).on('page:load', repage);
+};
+
+$(document).ready(do_on_load)
+$(window).on('page:change', do_on_load)
