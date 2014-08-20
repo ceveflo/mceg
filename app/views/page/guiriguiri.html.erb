@@ -1,2 +1,109 @@
-<h1>Page#guiriguiri</h1>
-<p>Find me in app/views/page/guiriguiri.html.erb</p>
+<div class="content">
+	   <%= render partial:"header"%>
+
+
+	<div class="wrap">
+		<div class="audios">
+			<%= image_tag 'guiri.jpg' %>
+		<div id="wrapper">			
+			<audio preload="auto" controls>
+				<source src="<%=  @archive[0].media_files[0].url_file rescue nil %>">
+			</audio>
+
+		<ul id="playlist">
+			<% @archive.each do |item| %>
+		        <li class="active">
+		            <a href="<%= item.media_files[0].url_file%>">
+		                <%= item.title %>
+		            </a>
+		        </li>
+	        <% end %>
+    	</ul>
+	
+    	</div></div>
+
+
+<div class="info">
+<h2></h2>
+	<p id="tags_p">
+	 
+	
+	</p>
+	<span class='st_sharethis_hcount' displayText='ShareThis'></span>
+	<span class='st_facebook_hcount' displayText='Facebook'></span>
+	<span class='st_twitter_hcount' displayText='Tweet'></span>
+	<span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+	<span class='st_pinterest_hcount' displayText='Pinterest'></span>
+	<span class='st_email_hcount' displayText='Email'></span>
+</div>
+<div class="clearfix"></div>
+
+		<div class="azul">
+	<div class="coments">
+	 <%= render partial: "disqus" %>
+	</div>
+	<div id="more">
+	<div id="container">
+
+			
+
+	</div>
+	</div>
+
+
+	</div>
+
+</div>
+<%= javascript_include_tag 'audioplayer', 'data-turbolinks-track' => false %>
+
+<script>
+	var audioplay;
+	audioplay = function() {
+		 $( 'audio' ).audioPlayer(); } ;
+
+	$(window).load(audioplay);
+	$(window).on('page:load', audioplay)
+
+</script>
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+var audio;
+var playlist;
+var tracks;
+var current;
+
+init();
+function init(){
+    current = 0;
+    audio = $('audio');
+    playlist = $('#playlist');
+    tracks = playlist.find('li a');
+    len = tracks.length - 1;
+    audio[0].volume = .70;
+    playlist.find('a').click(function(e){
+        e.preventDefault();
+        link = $(this);
+        current = link.parent().index();
+        run(link, audio[0]);
+    });
+    audio[0].addEventListener('ended',function(e){
+        current++;
+        if(current == len){
+            current = 0;
+            link = playlist.find('a')[0];
+        }else{
+            link = playlist.find('a')[current];    
+        }
+        run($(link),audio[0]);
+    });
+}
+function run(link, player){
+        player.src = link.attr('href');
+        par = link.parent();
+        par.addClass('active').siblings().removeClass('active');
+        audio[0].load();
+        audio[0].play();
+}
+});//]]>  
+
+</script>

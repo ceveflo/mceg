@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   #get 'page/videos'
 
-  get 'page/guiriguiri'
+  get 'guiriguirialaire' => 'page#guiriguiri'  , as:'guiri'
 
   get 'v/:slug' => 'page#video'
   get 'a/:slug' => 'page#audio'

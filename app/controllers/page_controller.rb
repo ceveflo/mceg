@@ -37,6 +37,7 @@ class PageController < ApplicationController
     @destacado = Archive.select("id").where("date_publication >= ? " , tree).order("num_views DESC").limit(10)
   end
 
+
   def audio
     now = Date.today
     tree = (now - 3)
@@ -55,5 +56,10 @@ class PageController < ApplicationController
   end
 
   def guiriguiri
+    
+    #@categories = Category.getType(params[:tipo])
+    @archive = Archive.getType('Audios' , 'guiriguirialaire' , 10)
+   
+   
   end
 end

@@ -10,8 +10,13 @@
             <%= getParentUrl(params[:tipo]) %>
         <ul class="sub_sidebar">
             <% @categories.each_with_index do |item, index| %>
-            <li class=" <%= "first_channel" unless index == 0 %>">
-                <%= link_to item.name , { controller: 'page' , action: :section , tipo: params[:tipo] , category: item.tag} %>
+
+            <li class=" <%= "first_channel" unless index == 0 %>" data-no-turbolink>
+                 <% if item.tag == "guiriguirialaire" %>
+                    <%= link_to item.name , guiri_path() %>
+                    <% else %>
+                    <%= link_to item.name , { controller: 'page' , action: :section , tipo: params[:tipo] , category: item.tag} %>
+                  <% end %>  
             </li>
             <% end %>
        
