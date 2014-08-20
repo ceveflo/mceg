@@ -3,7 +3,7 @@ class PageController < ApplicationController
   def section
 
       @categories = Category.getType(params[:tipo])
-      @archive = Archive.getType(params[:tipo] , params[:category])
+      @archive = Archive.getType(params[:tipo] , params[:category] , 25)
       
   end
 
