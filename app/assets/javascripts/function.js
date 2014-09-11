@@ -42,8 +42,8 @@ do_on_load = function() {
 	});
 
 	$(window).load(repage)
-	$(window).on('page:load', repage);
+	
 };
 
 $(document).ready(do_on_load)
-$(window).on('page:change', do_on_load)
+

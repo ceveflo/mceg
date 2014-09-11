@@ -16,6 +16,9 @@ Rails.application.routes.draw do
 
   get 'categoria/:tipo(/:category)' => 'page#section'   , as: 'seccion'
 
+  get 'loadmore_categoria/:page/:tipo(/:category)' => 'page#load_section'   , as: 'loadmoresection'
+  get 'loadmore/:lastid' => 'page#loadgrid' 
+
   get 'masvistos' => 'page#home' , as: 'masvistos'  , :defaults => { :tipo => 1 }
   get 'mascomentados' => 'page#home' , as: 'mascomentados'  , :defaults => { :tipo => 2 }
   # The priority is based upon order of creation: first created -> highest priority.

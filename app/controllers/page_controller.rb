@@ -3,8 +3,21 @@ class PageController < ApplicationController
   def section
 
       @categories = Category.getType(params[:tipo])
+      @tipo = params[:tipo]
+      @category = params[:category]
       @archive = Archive.getType(params[:tipo] , params[:category] , 25)
       
+  end
+
+  def load_section
+
+      
+      @tipo = params[:tipo]
+      @category = params[:category]
+
+      @archive = Archive.getType(params[:tipo] , params[:category] , 25 , params[:page])
+      render partial:"griditems" , locals: { archive: @archive} 
+
   end
 
   def home
@@ -15,7 +28,7 @@ class PageController < ApplicationController
     tree = (now - 3)
     case tipo
     when 0
-      @archive = Archive.order("date_publication DESC").limit(100)
+      @archive = Archive.order("date_publication DESC").limit(25)
       @destacado = Archive.select("id").where("date_publication >= ? " , tree).order("num_views DESC").limit(10)  
     when 1
 
@@ -28,6 +41,15 @@ class PageController < ApplicationController
     
    # render text: tipo
   end
+
+
+  def loadgrid
+    page = params[:lastid].to_i * 25
+    @archive = Archive.order('date_publication DESC').limit(25).offset(page)
+    render partial:"griditems" , locals: { archive: @archive} 
+  end
+
+
 
   def gale
      now = Date.today

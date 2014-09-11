@@ -4,7 +4,10 @@ class Archive < ActiveRecord::Base
 	has_many :media_files
 	self.table_name =  "archive"
 
-	def self.getType(slug , category = nil , nlimit = 100)
+	def self.getType(slug , category = nil , nlimit = 100 , page = 0)
+
+		page = page.to_i * nlimit
+
 		case slug
 		when 'Videos'
 			tipo = 'V'
@@ -24,7 +27,7 @@ class Archive < ActiveRecord::Base
 			else
 				a = self	
 		end
-		 a = a.where("media_type = ?" , tipo).order("date_publication DESC").limit(nlimit)		
+		 a = a.where("media_type = ?" , tipo).order("date_publication DESC").limit(nlimit).offset(page)		
  		
 	end
 end

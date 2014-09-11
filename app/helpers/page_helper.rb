@@ -4,7 +4,7 @@ module PageHelper
 	  if item.image.blank?
 	   image_path ("default-audio.jpg")
 	  else
-	    item. image
+	    item.image
 	  end
 	end
 

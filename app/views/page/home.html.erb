@@ -4,7 +4,7 @@
 
 	<section id="wrapper">
 		
-	<div id="container">
+	<div id="container" class="">
 
 	<%= render partial: "griditems" , locals: { archive: @archive}%>
 	
@@ -14,3 +14,30 @@
 <div style="clear:both"></div>
 
 </div>
+
+<script type="text/javascript">
+var count = 1;
+
+$(window).scroll(function(event){
+		event.preventDefault();
+		if($(window).scrollTop() == $(document).height() - $(window).height()){
+			console.log("Load more...");
+				load_more();			
+		}
+	});
+	
+	function load_more(){
+
+		var foo = 1;
+		$.get("/loadmore/"+count,function(data){
+			
+			$("#container").append(data);
+
+			do_on_load();
+			setTimeout(repage , 500);
+			//$("#paginaCanalCategoria").val(pagina+"/"+canal+"/"+categoria+"/"+tipo);
+			count += 1;
+		});
+		//console.log(count);
+	}
+</script>
