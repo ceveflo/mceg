@@ -3,11 +3,8 @@
 	<%= render partial:"header"%>
 
 	<section id="wrapper">
-		<% if !params[:tag].blank?%>
-		<p class="tag-busqueda">Tag: <strong><%= params[:tag] %></strong></p>
-		<% end %>
+		
 	<div id="container" class="">
-
 
 	<%= render partial: "griditems" , locals: { archive: @archive}%>
 	

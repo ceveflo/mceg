@@ -9,6 +9,8 @@ class PageController < ApplicationController
       
   end
 
+  
+
   def load_section
 
       
@@ -36,7 +38,9 @@ class PageController < ApplicationController
       
     when 2
       @archive = Archive.where("date_publication >= ? and num_comment > 0 " , tree).order("num_comment DESC").limit(10)
-      
+    when 3
+      @archive = Archive.where("media_tag like ? " , '%'+params[:tag]+'%').order("date_publication DESC").limit(25) 
+
     end
     
    # render text: tipo
@@ -44,8 +48,14 @@ class PageController < ApplicationController
 
 
   def loadgrid
+
     page = params[:lastid].to_i * 25
-    @archive = Archive.order('date_publication DESC').limit(25).offset(page)
+
+    if !params[:tag].blank?
+      @archive = Archive.where("media_tag like ? " , '%'+params[:tag]+'%').order("date_publication DESC").limit(25) 
+    else
+      @archive = Archive.order('date_publication DESC').limit(25).offset(page)
+    end
     render partial:"griditems" , locals: { archive: @archive} 
   end
 
