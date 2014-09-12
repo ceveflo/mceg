@@ -2,7 +2,7 @@
 lock '3.2.1'
 
 set :application, 'mceg'
-set :repo_url, 'https://bitbucket.org/oskrnav/mceg'
+set :repo_url, 'https://github.com/OskrNav/mceg.git'
 
 # Default branch is :master
 # Uncomment the following line to have Capistrano ask which branch to deploy.
