@@ -27,7 +27,7 @@ set :log_level, :debug
 
 # Default value for :pty is false
 set :pty, true
-set :use_sudo, false
+
 # Default value for :linked_files is []
 set :linked_files, %w{config/database.yml}
 
@@ -62,7 +62,7 @@ namespace :deploy do
   #     # execute :touch, release_path.join('tmp/restart.txt')
   #   end
   # end
-
+  
   before :deploy, "deploy:check_revision"
 
   after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
