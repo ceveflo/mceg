@@ -4,10 +4,19 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-# role :app, %w{deploy@example.com}
-# role :web, %w{deploy@example.com}
-# role :db,  %w{deploy@example.com}
+role :app, %w{deploy@104.130.128.242}
+role :web, %w{deploy@104.130.128.242}
+role :db,  %w{deploy@104.130.128.242}
 
+set :stage, :production
+
+# dont try and infer something as important as environment from
+# stage name.
+set :rails_env, :production
+
+# number of unicorn workers, this will be reflected in
+# the unicorn.rb and the monit configs
+set :unicorn_worker_count, 5
 
 # Extended Server Syntax
 # ======================
@@ -15,7 +24,7 @@
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '104.130.128.242', user: 'deploy', roles: %w{web app db}
+#server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
 
 # Custom SSH Options
@@ -25,11 +34,11 @@ server '104.130.128.242', user: 'deploy', roles: %w{web app db}
 #
 # Global options
 # --------------
-#  set :ssh_options, {
+set :ssh_options, {
 #    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
+  forward_agent: true,
 #    auth_methods: %w(password)
-#  }
+}
 #
 # And/or per server (overrides global)
 # ------------------------------------

@@ -28,8 +28,20 @@ gem 'unicorn'
 gem 'dalli'
 gem 'asset_sync'
 
-gem 'capistrano', '~> 3.2.1'
-gem 'capistrano-rails', '~> 1.1'
+
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+
+  # Use Capistrano for deployment
+  gem 'capistrano-rails', '~> 1.1.0'
+
+  # Integrate bundler with capistrano
+  gem 'capistrano-bundler'
+
+  # if you are using Rbenv
+  gem 'capistrano-rbenv', '~> 2.0.2'
+  
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

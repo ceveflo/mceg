@@ -43,6 +43,9 @@ GEM
     capistrano-rails (1.1.2)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rbenv (2.0.2)
+      capistrano (~> 3.1)
+      sshkit (~> 1.3)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -143,6 +146,7 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -186,8 +190,9 @@ PLATFORMS
 
 DEPENDENCIES
   asset_sync
-  capistrano (~> 3.2.1)
-  capistrano-rails (~> 1.1)
+  capistrano-bundler
+  capistrano-rails (~> 1.1.0)
+  capistrano-rbenv (~> 2.0.2)
   coffee-rails (~> 4.0.0)
   dalli
   jbuilder (~> 2.0)
@@ -197,6 +202,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  spring
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)
