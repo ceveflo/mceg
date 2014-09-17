@@ -4,7 +4,7 @@ lock '3.2.1'
 set :application, 'mceg'
 set :deploy_user, 'deploy'
 
-set :repo_url, 'git@github.com:OskrNav/mceg.git'
+set :repo_url, 'https://github.com/OskrNav/mceg.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
@@ -23,11 +23,11 @@ set :scm, :git
 set :format, :pretty
 
 # Default value for :log_level is :debug
-set :log_level, :info
+set :log_level, :debug
 
 # Default value for :pty is false
 set :pty, true
-
+set :use_sudo, false
 # Default value for :linked_files is []
 set :linked_files, %w{config/database.yml}
 

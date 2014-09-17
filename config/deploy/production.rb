@@ -36,7 +36,7 @@ set :unicorn_worker_count, 5
 # --------------
 set :ssh_options, {
 #    keys: %w(/home/rlisowski/.ssh/id_rsa),
-  forward_agent: true,
+  	forward_agent: true,
 #    auth_methods: %w(password)
 }
 #
