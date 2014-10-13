@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'export/brigtcove'
+
+  get 'export/gnweb/:tipo' =>'export#gnweb' , as:'exportgnweb'
+
+  get 'export/audio'
+
   get 'page/home'
 
   get 'page/galeria'
@@ -10,12 +16,13 @@ Rails.application.routes.draw do
 
   get 'guiriguirialaire' => 'page#guiriguiri'  , as:'guiri'
 
-  get 'v/:slug' => 'page#video'
-  get 'a/:slug' => 'page#audio'
-  get 'g/:slug' => 'page#gale'
+  get 'v/:slug' => 'page#video' , as:'video'
+  get 'a/:slug' => 'page#audio' , as:'audio'
+  get 'g/:slug' => 'page#gale' , as:'gale'
+
 
   get 'categoria/:tipo(/:category)' => 'page#section'   , as: 'seccion'
-
+  get 'rss/:tipo' => 'rss#section' , as:'rss'
   
 
   get 'loadmore_categoria/:page/:tipo(/:category)' => 'page#load_section'   , as: 'loadmoresection'

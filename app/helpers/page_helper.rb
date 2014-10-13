@@ -2,7 +2,7 @@ module PageHelper
 
 	def blank_image(item)
 	  if item.image.blank?
-	   image_path ("default-audio.jpg")
+	 	 "default-audio.jpg"
 	  else
 	    item.image
 	  end

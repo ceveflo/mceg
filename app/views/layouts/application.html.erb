@@ -3,13 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Media Center</title>
+
+<title>Media Center El Grafico - <%= yield :headtitle%>) </title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "ur-aa503ebe-a77a-a418-4b2a-960c438084b6", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  <%= yield :metaheader %>
   <%= csrf_meta_tags %>
 </head>
 <body>

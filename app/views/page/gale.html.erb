@@ -1,3 +1,12 @@
+<% content_for :metaheader  do %>
+    <meta property="og:title" content="Mediacenter El Gráfico - <%= @video.title%>"/>
+        <meta property="og:description" content="Mediacenter El Gráfico <%= @video.title%>"/>
+        <meta property="og:image" content="<%= @video.image%>"/>
+        <meta property="og:url" content="http://mediacenter.elgrafico.com/v/<%= @video.slug_name%>"/>
+<% end %>
+<% content_for :headtitle  do %>
+    <%= @video.title%>
+<% end %>
 <div class="content">
 	<%= render partial:"header"%>
 

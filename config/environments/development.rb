@@ -22,6 +22,17 @@ Rails.application.configure do
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
+CarrierWave.configure do |config|
+  config.fog_credentials = {
+  :provider           => 'Rackspace',
+    :rackspace_username => 'oscar.navidad',
+    :rackspace_api_key  => '6fbc0378417246b3bbe3b5b60ff40381',
+    :rackspace_region   => :ord                # optional, defaults to :dfw
+  }
+  config.fog_directory = 'ElGrafico_2014'
+
+  
+end
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.

@@ -3,7 +3,11 @@ class Archive < ActiveRecord::Base
 	belongs_to :channel
 	has_many :media_files
 	self.table_name =  "archive"
+	mount_uploader :imageCDN, FimageUploader
 
+
+	
+	
 	def self.getType(slug , category = nil , nlimit = 100 , page = 0)
 
 		page = page.to_i * nlimit

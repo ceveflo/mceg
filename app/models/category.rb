@@ -14,4 +14,15 @@ class Category < ActiveRecord::Base
 		self.where("seccion = ?" , tipo).order("name ASC")
  		
 	end
+
+	def self.searchCat(categoria,tipo)
+		strsearch = categoria.gsub("MC", "").strip()
+		cat = self.where("name = ? and seccion = ? " , strsearch , tipo)
+		cat = cat[0]
+		if cat
+		 	cat.id
+		 else
+		 	0
+		 end 
+	end
 end
