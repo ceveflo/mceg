@@ -44,9 +44,9 @@ Rails.application.configure do
   # Set to :debug to see everything in the log.
   config.log_level = :info
 
-  if ENV["MEMCACHEDCLOUD_SERVERS"]
-    config.cache_store = :dalli_store, ENV["MEMCACHEDCLOUD_SERVERS"].split(','), { :username => ENV["MEMCACHEDCLOUD_USERNAME"], :password => ENV["MEMCACHEDCLOUD_PASSWORD"] }
-      end
+  #if ENV["MEMCACHEDCLOUD_SERVERS"]
+  #  config.cache_store = :dalli_store, ENV["MEMCACHEDCLOUD_SERVERS"].split(','), { :username => ENV["MEMCACHEDCLOUD_USERNAME"], :password => ENV["MEMCACHEDCLOUD_PASSWORD"] }
+  #    end
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
