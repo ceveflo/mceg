@@ -13,7 +13,17 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+CarrierWave.configure do |config|
+  config.fog_credentials = {
+  :provider           => 'Rackspace',
+    :rackspace_username => 'oscar.navidad',
+    :rackspace_api_key  => '6fbc0378417246b3bbe3b5b60ff40381',
+    :rackspace_region   => :ord                # optional, defaults to :dfw
+  }
+  config.fog_directory = 'ElGrafico_2014'
 
+  
+end
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like nginx, varnish or squid.
