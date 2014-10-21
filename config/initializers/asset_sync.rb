@@ -2,10 +2,10 @@ AssetSync.configure do |config|
   config.fog_provider = 'Rackspace'
   config.rackspace_username = 'oscar.navidad'
   config.rackspace_api_key = '6fbc0378417246b3bbe3b5b60ff40381'
-
+  config.fog_region = "ord"
   # if you need to change rackspace_auth_url (e.g. if you need to use Rackspace London)
   # config.rackspace_auth_url = "lon.auth.api.rackspacecloud.com"
-  config.fog_directory = 'mediacenter'
+  config.fog_directory = 'ElGrafico_2014'
 
   # Invalidate a file on a cdn after uploading files
   # config.cdn_distribution_id = "12345"
