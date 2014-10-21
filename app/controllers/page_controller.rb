@@ -52,10 +52,11 @@ class PageController < ApplicationController
     page = params[:lastid].to_i * 25
 
     if !params[:tag].blank?
-      @archive = Archive.where("media_tag like ? " , '%'+params[:tag]+'%').order("date_publication DESC").limit(25) 
+      @archive = Archive.where("media_tag like ? " , '%'+params[:tag]+'%').order("date_publication DESC").limit(25).offset(page) 
     else
       @archive = Archive.order('date_publication DESC').limit(25).offset(page)
     end
+    
     render partial:"griditems" , locals: { archive: @archive} 
   end
 
@@ -83,7 +84,7 @@ class PageController < ApplicationController
      now = Date.today
     tree = (now - 3)
     @video = Archive.find_by slug_name:params[:slug]
-    @related = Archive.where("media_tag like ? " , @video.media_tag).order("rand()").limit(7)
+    @related = Archive.where("media_tag like ? " , @video.media_tag).order("rand()").limit(7) rescue nil
      @destacado = Archive.select("id").where("date_publication >= ? " , tree).order("num_views DESC").limit(10)
   end
 

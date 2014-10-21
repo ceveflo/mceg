@@ -4,7 +4,15 @@
 
 	<section id="wrapper">
 		<% if !params[:tag].blank?%>
-		<p class="tag-busqueda">Tag: <strong><%= params[:tag] %></strong></p>
+		<p class="tag-busqueda">Tag: <strong><%= params[:tag] %></strong><br>
+			<% if params[:tag] == "cafecondonrobert" %>
+				<%= image_tag "BANNERS3.jpg" %>
+			<% end %>
+			<% if params[:tag] == "elgraficotv" %>
+				<%= image_tag "BANNERS2.jpg" %>
+			<% end %>
+		</p>
+			
 		<% end %>
 	<div id="container" class="">
 
@@ -32,8 +40,11 @@ $(window).scroll(function(event){
 	function load_more(){
 
 		var foo = 1;
+		<% if !params[:tag].blank?%>
+			$.get("/loadmore/"+count+"/<%= params[:tag]%>",function(data){
+		<% else %>	
 		$.get("/loadmore/"+count,function(data){
-			
+		<% end %>	
 			$("#container").append(data);
 
 			do_on_load();

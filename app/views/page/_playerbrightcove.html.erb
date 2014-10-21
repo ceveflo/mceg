@@ -1,22 +1,13 @@
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"></script>
 <!-- Start of Brightcove Player -->
 
-<div style="display:none">
-
-</div>
-
-<!--
-By use of this code snippet, I agree to the Brightcove Publisher T and C 
-found at https://accounts.brightcove.com/en/terms-and-conditions/. 
--->
-
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-
-<object id="myExperience3689897573001" class="BrightcoveExperience">
+<object id="myExperience" class="BrightcoveExperience">
   <param name="bgcolor" value="#FFFFFF" />
   <param name="width" value="480" />
   <param name="height" value="270" />
-  <param name="playerID" value="1253286408001" />
-  <param name="playerKey" value="AQ~~,AAAAii5Rn2E~,7dLC61Bt4MPNfGIoPDB79hFp7u4_Qy5H" />
+  <param name="playerID" value="811317546001" />
+  <param name="playerKey" value="AQ~~,AAAAii5Rn2E~,7dLC61Bt4MMs3wdp_WH6pGndPmlO0vBT" />
   <param name="isVid" value="true" />
   <param name="isUI" value="true" />
   <param name="dynamicStreaming" value="true" />
@@ -31,4 +22,45 @@ the rest of the HTML is processed and the page load is complete, remove the line
 -->
 <script type="text/javascript">brightcove.createExperiences();</script>
 
-<!-- End of Brightcove Player -->
+
+
+<script type="text/javascript">
+
+ var player , video, content, exp;
+          var adModule;
+          //var oldAdTranslatorURL;
+          var skip=true;
+
+           function onTemplateLoaded(pExperience) {
+              player = brightcove.getExperience(pExperience);
+               video   = player.getModule(APIModules.VIDEO_PLAYER);
+               content = player.getModule(APIModules.CONTENT);
+                exp     = player.getModule(APIModules.EXPERIENCE);
+              adModule = player.getModule(APIModules.ADVERTISING);
+              
+              adModule.addEventListener('adProgress',aparecer,false);
+              video.enableInitialBandwidthDetection(true);
+             // video.setDefaultBufferTime(20);
+           
+          
+          }
+
+          function detener(){
+            
+         
+          adModule.stopAd();
+             $(".skip_ad").fadeOut();  
+             
+            
+          }
+
+        
+          function aparecer(){
+            
+           if(skip){
+               skip=false;
+             setTimeout(function() { $(".skip_ad").fadeIn();   }, 0); 
+            }
+             
+          }
+</script>

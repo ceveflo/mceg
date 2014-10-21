@@ -210,3 +210,20 @@ position: relative;
 .buscador {width: 173px;}
 .srch {display: block;width: 60%;}
 }
+
+div.video_options{
+	position:relative;
+}
+div.video_options a.skip_ad{
+	position:absolute;
+	right: 0;
+	top: 0px;
+	font-size:12px;
+	display:none;
+}
+div.video_options a.skip_ad span{
+	display:block;
+	padding:5px;
+	background:rgba(118, 0, 0, 0.85);
+	color:#ffffff;
+}
