@@ -43,7 +43,7 @@ end
   config.assets.digest = true
 
   # `config.assets.precompile` has moved to config/initializers/assets.rb
- config.action_controller.asset_host = "//3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com"
+ #config.action_controller.asset_host = "//3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com"
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
@@ -61,7 +61,7 @@ end
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
-  #config.assets.prefix = "/production/assets"
+  config.assets.prefix = "/production/assets"
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
