@@ -1,0 +1,1564 @@
+/* CSS Document */
+/* line 4, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  background: #ebebeb;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Ubuntu Light"), local("Ubuntu-Light"), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+/* line 8, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+header {
+  border-top: 24px solid #272d34;
+  background: #464646;
+}
+
+/* line 9, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 10, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.ad728 {
+  max-width: 728px;
+  float: left;
+}
+
+/* line 11, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.ad object, .ad embed, .ad img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 12, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.radiobox a {
+  border-radius: 45px;
+  background: url(/assets/circle-music.png) no-repeat white -2px -2px;
+  float: right;
+  padding: 7px 15px 7px 45px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #a3a3a3;
+}
+
+/* line 13, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.buscador {
+  width: 200px;
+  float: right;
+  margin-bottom: 27px;
+}
+
+/* line 14, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.radiobox {
+  margin-top: 10px;
+}
+
+/* line 15, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.srch {
+  display: block;
+  width: 65%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  margin-top: 10px;
+  float: left;
+}
+
+/* line 16, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.btn {
+  width: 20%;
+  padding: 17px 12px;
+  background: #cccccc url(/assets/search.png) no-repeat center center;
+  border-radius: 5px;
+  border: 0;
+  float: left;
+  margin-top: 10px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+/* navigation bar */
+/* line 18, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav .wrap {
+  position: relative;
+  height: 48px;
+}
+
+/* line 19, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav img {
+  width: 200px;
+  height: 48px;
+  margin-top: 4px;
+}
+
+/* line 20, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav {
+  display: block;
+  width: 100%;
+  position: relative;
+  background: #cccccc url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/bg-nav.jpg) left top repeat-x;
+  height: 48px;
+  clear: both;
+  border-bottom: 4px solid #004168;
+}
+
+/* line 21, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav #navbtn {
+  display: none;
+  margin-right: 15px;
+  height: 35px;
+  background: url(/assets/menu.png) 95px 12px no-repeat;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 3% 0 3%;
+  width: 94%;
+  color: #777;
+  font-size: 20px;
+  height: 48px;
+  line-height: 40px;
+}
+
+/* line 22, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav #navbtn:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* line 23, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav {
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+/* line 24, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li {
+  display: block;
+  float: left;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/menu-separator.png) right center no-repeat;
+}
+
+/* line 26, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li:last-child {
+  background: none;
+}
+
+/* line 27, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li a {
+  display: block;
+  text-decoration: none;
+  line-height: 20px;
+  color: #777;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* line 28, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  z-index: 2;
+  background: #f5f5f5;
+  min-width: 160px;
+}
+
+/* line 29, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li:hover ul {
+  display: block;
+}
+
+/* line 30, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li ul li {
+  float: none;
+}
+
+/* line 31, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li ul li a {
+  background: url(/assets/menu-separator.png) right center no-repeat whitesmoke;
+  color: #000;
+}
+
+/* line 32, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#topnav nav ul li ul li a:hover {
+  background: #e8e8e8;
+}
+
+/* line 33, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.content {
+  background: url(/assets/bg-content.jpg) repeat-x #ebebeb;
+}
+
+/* clearfix */
+/* line 35, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.clearfix {
+  clear: both;
+}
+
+/* wrapper css */
+/* line 37, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#wrapper {
+  width: 100%;
+  margin-top: -3px;
+}
+
+/* line 38, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#container {
+  position: relative;
+  width: 980px;
+  padding-bottom: 10px;
+  margin: 0 auto 25px;
+}
+
+/* line 39, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.grid {
+  width: 225px;
+  min-height: 100px;
+  background: #00182B;
+  font-size: 12px;
+  float: left;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -webkit-transition: top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;
+  -moz-transition: top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;
+  -o-transition: top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;
+  -ms-transition: top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;
+  margin: 4px;
+  padding: 2px 2px 7px;
+  color: #FFF;
+}
+
+/* line 40, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.grid a.link {
+  border-bottom: 1px solid #13507F;
+  display: block;
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 0 5px 5px 26px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* line 41, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.grid:hover {
+  background: #053D69;
+}
+
+/* line 42, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.grid span {
+  background: #0D63A7;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  display: block;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+/*#container:hover .grid:not(:hover){opacity: 0.7;}*/
+/* line 44, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.video a.link {
+  background: url(/assets/play.png) no-repeat 3px 0;
+}
+
+/* line 45, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.gale a.link {
+  background: url(/assets/photo.png) no-repeat 3px 0;
+}
+
+/* line 46, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audio a.link {
+  background: url(/assets/audio.png) no-repeat 3px 0;
+}
+
+/* line 47, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.grid .meta {
+  text-align: center;
+  color: #777;
+}
+
+/* line 48, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.grid .imgholder img {
+  max-width: 100%;
+  background: #ccc;
+  display: block;
+  width: 100%;
+}
+
+/* line 49, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.logo {
+  float: left;
+  margin-top: 30px;
+}
+
+/* line 50, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.portada-kiosko {
+  width: 150px;
+  height: 110px;
+  overflow: hidden;
+  margin-left: 30px;
+  float: right;
+  text-align: right;
+}
+
+/* line 51, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.portada-kiosko img {
+  transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -webkit-transform: rotate(-8deg);
+  margin-top: 20px;
+  transition: all 300ms ease 0;
+}
+
+/* line 52, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.portada-kiosko img:hover {
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  margin-top: 0;
+}
+
+/* line 53, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns {
+  width: 135px;
+  height: 32px;
+  float: right;
+  margin: 36px 35px 0;
+  padding: 0;
+}
+
+/* line 54, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns span {
+  color: #fff;
+  width: 105px;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 20px 0 auto;
+}
+
+/* line 55, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns ul {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+/* line 56, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li, .app-btns a {
+  display: inline-block;
+  width: 34px;
+  height: 32px;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+/* line 57, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li.android-btn {
+  background: url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/icon-android.png) no-repeat 0 0;
+}
+
+/* line 58, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li.apple-btn {
+  background: url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/icon-apple.png) no-repeat 0 0;
+}
+
+/* line 59, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li.window-btn {
+  background: url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/icon-windows.png) no-repeat 0 0;
+}
+
+/* line 60, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li.android-btn, .app-btns li.apple-btn, .app-btns li.window-btn {
+  -webkit-transition: background-position .1s ease-in-out;
+  -moz-transition: background-position .1s ease-in-out;
+  -ms-transition: background-position .1s ease-in-out;
+  -o-transition: background-position .1s ease-in-out;
+  transition: background-position .1s ease-in-out;
+}
+
+/* line 61, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li.android-btn:hover {
+  background: url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/icon-android.png) no-repeat 0 -32px;
+}
+
+/* line 62, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li.apple-btn:hover {
+  background: url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/icon-apple.png) no-repeat 0 -32px;
+}
+
+/* line 63, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.app-btns li.window-btn:hover {
+  background: url(http://3f23230283e636b61521-5ff817cd1603f874fb3abb5646e9b504.r0.cf2.rackcdn.com/images/template/images/icon-windows.png) no-repeat 0 -32px;
+}
+
+/* line 64, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.menumedia {
+  background: #053D69;
+  border-radius: 5px;
+  padding: 4px 0;
+}
+
+/* line 65, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.menumedia ul {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  display: table;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 66, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.menumedia ul li {
+  list-style: none;
+  display: block;
+  float: left;
+  padding: 0;
+}
+
+/* line 67, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.menumedia ul li a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 5px 10px;
+  display: block;
+  border-right: 1px solid #13507F;
+  transition: all ease-in-out .3s;
+}
+
+/* line 68, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.menumedia ul li:last-child a {
+  border-right: none;
+}
+
+/* line 69, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.menumedia ul li a:hover {
+  background: rgba(34, 25, 25, 0.5);
+  color: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.9);
+  -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+/* line 70, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.table {
+  margin: 0 auto;
+  display: table;
+}
+
+/* line 71, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.videop {
+  position: relative;
+  width: 100%;
+  height: 427px;
+  margin-top: 20px;
+  /*float:left*/
+}
+
+/* line 72, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.galeria {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+}
+
+/* line 73, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.videop iframe, .videop object, .videop embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 74, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.info {
+  background: #053D69;
+  width: 940px;
+  float: left;
+  padding: 20px;
+  margin-top: 0;
+  color: #FFF;
+}
+
+/* line 75, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.info h2 {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #13507F;
+}
+
+/* line 76, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.info #tags_p a {
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline;
+  text-decoration: none;
+  padding: 3px;
+  line-height: 32px;
+}
+
+/* line 77, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.coments {
+  width: 46%;
+  padding: 10px 2%;
+  background: #053D69;
+  float: left;
+}
+
+/* line 78, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#more {
+  width: 50%;
+  float: left;
+  background: #012644;
+}
+
+/* line 79, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#more #container {
+  width: 490px;
+}
+
+/* line 80, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.azul {
+  background: #053D69;
+  overflow: hidden;
+}
+
+/* line 81, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.sidebar {
+  margin: 13px 0 0 0;
+  padding: 20px 0;
+  display: block;
+  float: left;
+  width: 220px;
+  background: #053D69;
+  color: #FFF;
+}
+
+/* line 82, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.sidebar h1 {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* line 83, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.sidebar li {
+  list-style: none;
+  margin: 0 10px;
+  display: block;
+}
+
+/* line 84, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.sidebar li a {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #13507F;
+  display: block;
+  padding: 5px 0;
+  font-size: 13px;
+  padding-left: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 85, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.sidebar li ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* line 86, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.sidebar li ul li {
+  margin: 0;
+  border-bottom: 1px solid #13507F;
+}
+
+/* line 87, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.sidebar li ul li a {
+  border-bottom: none;
+  padding-left: 25px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 88, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#container.seccion {
+  width: 760px;
+  float: left;
+}
+
+/* line 89, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.overflow {
+  overflow: hidden;
+}
+
+/*GALERIA*/
+/* line 91, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-image-wrapper {
+  position: relative;
+  padding: 20px 30px;
+  background: transparent url(/assets/black.png) repeat top left;
+  min-height: 20px;
+}
+
+/* line 92, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-image {
+  position: relative;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 93, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 94, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-image-nav a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black url(/assets/nav.png) no-repeat -20% 50%;
+  width: 28px;
+  height: 100%;
+  text-indent: -9000px;
+  cursor: pointer;
+  opacity: .3;
+  outline: none;
+}
+
+/* line 95, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-image-nav a.rg-image-nav-next {
+  right: 0;
+  left: auto;
+  background-position: 115% 50%;
+}
+
+/* line 96, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-image-nav a:hover {
+  opacity: .8;
+}
+
+/* line 97, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-caption {
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+/* line 98, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-caption p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-family: 'Trebuchet MS','Myriad Pro',Arial,sans-serif;
+  line-height: 16px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+/* line 99, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-view {
+  height: 30px;
+  display: none;
+}
+
+/* line 100, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-view a {
+  display: block;
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  background: #464646 url(/assets/views.png) no-repeat top left;
+  border: 3px solid #464646;
+  opacity: .8;
+}
+
+/* line 101, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-view a:hover {
+  opacity: 1;
+}
+
+/* line 102, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-view a.rg-view-full {
+  background-position: 0 0;
+}
+
+/* line 103, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-view a.rg-view-selected {
+  background-color: #6f6f6f;
+  border-color: #6f6f6f;
+}
+
+/* line 104, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-view a.rg-view-thumbs {
+  background-position: 0 -16px;
+}
+
+/* line 105, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.rg-loading {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black url(/assets/ajax-loader.gif) no-repeat center center;
+  margin: -23px 0 0 -23px;
+  z-index: 100;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  opacity: .7;
+}
+
+/* line 106, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-carousel-wrapper {
+  background: #101010;
+  padding: 10px 27px;
+  position: relative;
+  position: relative;
+}
+
+/* line 107, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-carousel {
+  overflow: hidden;
+  background: #000;
+}
+
+/* line 108, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-carousel ul {
+  display: none;
+}
+
+/* line 109, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-carousel ul li {
+  height: 100%;
+  float: left;
+  display: block;
+}
+
+/* line 110, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-carousel ul li a {
+  display: block;
+  border-style: solid;
+  border-color: #222;
+  opacity: .8;
+  -webkit-touch-callout: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* line 111, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-carousel ul li.selected a {
+  border-color: #fff;
+  opacity: 1;
+}
+
+/* line 112, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-carousel ul li a img {
+  display: block;
+  border: none;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 113, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-nav span {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  background: transparent url(/assets/nav_thumbs.png) no-repeat top left;
+  width: 14px;
+  height: 26px;
+  margin-top: -13px;
+  text-indent: -9000px;
+  cursor: pointer;
+  opacity: .8;
+}
+
+/* line 114, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-nav span.es-nav-next {
+  right: 8px;
+  left: auto;
+  background-position: top right;
+}
+
+/* line 115, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.es-nav span:hover {
+  opacity: 1;
+}
+
+/* line 116, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.media {
+  background: #053D69;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 117, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.media .info, .media .galeria {
+  margin-top: 0;
+}
+
+/*AUDI PLAYER*/
+/* line 119, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer {
+  height: 2.5em;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+  border: 1px solid #222;
+  position: relative;
+  z-index: 1;
+  background: #333;
+  background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#222222));
+  background: -webkit-linear-gradient(top, #444444, #222222);
+  background: -moz-linear-gradient(top, #444444, #222222);
+  background: -ms-radial-gradient(top, #444444, #222222);
+  background: -o-linear-gradient(top, #444444, #222222);
+  background: linear-gradient(top, #444444, #222222);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 1.25em rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 1.25em rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 1.25em rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 120, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-mini {
+  width: 2.5em;
+  margin: 0 auto;
+}
+
+/* line 121, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer > div {
+  position: absolute;
+}
+
+/* line 122, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-playpause {
+  width: 2.5em;
+  height: 100%;
+  text-align: left;
+  text-indent: -9999px;
+  cursor: pointer;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+/* line 123, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer:not(.audioplayer-mini) .audioplayer-playpause {
+  border-right: 1px solid #555;
+  border-right-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 124, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-mini .audioplayer-playpause {
+  width: 100%;
+}
+
+/* line 124, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-playpause:focus, .audioplayer-playpause:hover {
+  background-color: #222;
+}
+
+/* line 125, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-playpause a {
+  display: block;
+}
+
+/* line 126, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
+  width: 0;
+  height: 0;
+  border: .5em solid transparent;
+  border-right: none;
+  border-left-color: #fff;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -.5em 0 0 -.25em;
+}
+
+/* line 127, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-playing .audioplayer-playpause a {
+  width: .75em;
+  height: .75em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -.375em 0 0 -.375em;
+}
+
+/* line 128, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-playing .audioplayer-playpause a:after, .audioplayer-playing .audioplayer-playpause a:before {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+/* line 129, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-playing .audioplayer-playpause a:before {
+  left: 0;
+}
+
+/* line 129, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-playing .audioplayer-playpause a:after {
+  right: 0;
+}
+
+/* line 130, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-time {
+  width: 4.375em;
+  height: 100%;
+  line-height: 2.375em;
+  text-align: center;
+  z-index: 2;
+  top: 0;
+}
+
+/* line 131, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-time-current {
+  border-left: 1px solid #111;
+  border-left-color: rgba(0, 0, 0, 0.25);
+  left: 2.5em;
+}
+
+/* line 132, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-time-duration {
+  border-right: 1px solid #555;
+  border-right-color: rgba(255, 255, 255, 0.1);
+  right: 2.5em;
+}
+
+/* line 133, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-novolume .audioplayer-time-duration {
+  border-right: 0;
+  right: 0;
+}
+
+/* line 134, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-bar {
+  height: .875em;
+  background-color: #222;
+  cursor: pointer;
+  z-index: 1;
+  top: 50%;
+  right: 6.875em;
+  left: 6.875em;
+  margin-top: -.438em;
+}
+
+/* line 135, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-novolume .audioplayer-bar {
+  right: 4.375em;
+}
+
+/* line 136, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-bar div {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 137, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-bar-loaded {
+  background-color: #333;
+  z-index: 1;
+}
+
+/* line 138, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-bar-played {
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#ff2400));
+  background: -webkit-linear-gradient(left, #ff8a00, #ff2400);
+  background: -moz-linear-gradient(left, #ff8a00, #ff2400);
+  background: -ms-radial-gradient(left, #ff8a00, #ff2400);
+  background: -o-linear-gradient(left, #ff8a00, #c600ff);
+  background: linear-gradient(left, #ff8a00, #ff2400);
+  z-index: 2;
+}
+
+/* line 139, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume {
+  width: 2.5em;
+  height: 100%;
+  border-left: 1px solid #111;
+  border-left-color: rgba(0, 0, 0, 0.25);
+  text-align: left;
+  text-indent: -9999px;
+  cursor: pointer;
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
+
+/* line 140, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume:focus, .audioplayer-volume:hover {
+  background-color: #222;
+}
+
+/* line 141, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-button {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 142, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-button a {
+  width: .313em;
+  height: .375em;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  z-index: 1;
+  top: 40%;
+  left: 35%;
+}
+
+/* line 143, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-button a:after, .audioplayer-volume-button a:before {
+  content: '';
+  position: absolute;
+}
+
+/* line 143, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-button a:before {
+  width: 0;
+  height: 0;
+  border: .5em solid transparent;
+  border-left: none;
+  border-right-color: #fff;
+  z-index: 2;
+  top: 50%;
+  right: -.25em;
+  margin-top: -.5em;
+}
+
+/* line 144, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer:not(.audioplayer-mute) .audioplayer-volume-button a:after {
+  width: .313em;
+  height: .313em;
+  border: .25em double #fff;
+  border-width: .25em .25em 0 0;
+  left: .563em;
+  top: -.063em;
+  -webkit-border-radius: 0 .938em 0 0;
+  -moz-border-radius: 0 .938em 0 0;
+  border-radius: 0 .938em 0 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 145, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-adjust {
+  height: 6.25em;
+  cursor: default;
+  position: absolute;
+  left: 0;
+  right: -1px;
+  top: -9999px;
+  background: #222;
+  background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#222222));
+  background: -webkit-linear-gradient(top, #444444, #222222);
+  background: -moz-linear-gradient(top, #444444, #222222);
+  background: -ms-radial-gradient(top, #444444, #222222);
+  background: -o-linear-gradient(top, #444444, #222222);
+  background: linear-gradient(top, #444444, #222222);
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* line 146, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume:not(:hover) .audioplayer-volume-adjust {
+  opacity: 0;
+}
+
+/* line 146, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume:hover .audioplayer-volume-adjust {
+  top: auto;
+  bottom: 100%;
+}
+
+/* line 147, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-adjust > div {
+  width: 40%;
+  height: 80%;
+  background-color: #222;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin: 30% auto 0;
+}
+
+/* line 148, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-adjust div div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #007fd1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#007fd1), to(#c600ff));
+  background: -webkit-linear-gradient(bottom, #007fd1, #c600ff);
+  background: -moz-linear-gradient(bottom, #007fd1, #c600ff);
+  background: -ms-radial-gradient(bottom, #007fd1, #c600ff);
+  background: -o-linear-gradient(bottom, #007fd1, #c600ff);
+  background: linear-gradient(bottom, #007fd1, #c600ff);
+}
+
+/* line 149, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-novolume .audioplayer-volume {
+  display: none;
+}
+
+/* line 149, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-pause, .audioplayer-play, .audioplayer-volume a {
+  -webkit-filter: drop-shadow(1px 1px 0 black);
+  -moz-filter: drop-shadow(1px 1px 0 black);
+  -ms-filter: drop-shadow(1px 1px 0 black);
+  -o-filter: drop-shadow(1px 1px 0 black);
+  filter: drop-shadow(1px 1px 0 black);
+}
+
+/* line 150, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-bar, .audioplayer-bar div, .audioplayer-volume-adjust div {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 151, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-bar, .audioplayer-volume-adjust > div {
+  -webkit-box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* line 152, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-bar-played, .audioplayer-volume-adjust div div {
+  -webkit-box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* line 153, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer-volume-adjust {
+  -webkit-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15), 2px -2px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15), 2px -2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15), 2px -2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* line 154, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audioplayer *, .audioplayer :after, .audioplayer :before {
+  -webkit-transition: color .25s ease,background-color .25s ease,opacity .5s ease;
+  -moz-transition: color .25s ease,background-color .25s ease,opacity .5s ease;
+  -ms-transition: color .25s ease,background-color .25s ease,opacity .5s ease;
+  -o-transition: color .25s ease,background-color .25s ease,opacity .5s ease;
+  transition: color .25s ease,background-color .25s ease,opacity .5s ease;
+}
+
+/* line 155, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.audios {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+/* line 156, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#playlist {
+  background: #222222;
+  padding: 20px;
+  margin: 0;
+  height: 144px;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+/* line 157, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#playlist .active a {
+  color: #FFF;
+  text-decoration: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  background: #053D69;
+}
+
+/* line 158, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#playlist li a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  transition: .3s all ease-in-out;
+}
+
+/* line 159, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#playlist li a:hover {
+  text-decoration: none;
+  background: #333;
+  color: #09F;
+}
+
+/* line 160, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+#playlist li {
+  list-style: none;
+}
+
+/* line 161, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+.tag-busqueda {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  display: table;
+  line-height: 38px;
+  background: #053D69;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1240px) {
+  /*body{overflow:auto;}*/
+}
+@media screen and (max-width: 900px) {
+  /* line 166, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #backlinks {
+    float: none;
+    clear: both;
+  }
+
+  /* line 167, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #backlinks a {
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+/*End navigation bar */
+@media screen and (max-width: 1091px) {
+  /* navigation bar */
+  /* line 172, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 48px;
+    right: auto;
+    border-bottom: 1px solid #074862;
+    z-index: 4;
+  }
+
+  /* line 173, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav nav ul {
+    background: #f5f5f5;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.9);
+    -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    overflow: hidden;
+  }
+
+  /* line 174, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav nav ul li {
+    float: none;
+    margin: 0;
+  }
+
+  /* line 175, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav nav ul li a {
+    display: block;
+    line-height: 1.4em;
+    padding: 6px 9px;
+  }
+
+  /* line 176, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav nav ul li a:hover {
+    background: #e8e8e8;
+  }
+
+  /* line 177, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav nav ul li ul {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    width: auto;
+    min-width: inherit;
+    top: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  /* line 178, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav #navbtn {
+    display: block;
+  }
+
+  /* line 179, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #topnav, #topnav .container {
+    height: auto;
+  }
+
+  /*End navigation bar */
+  /* line 181, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .wrap {
+    width: 768px;
+  }
+
+  /* line 182, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .ad728 {
+    margin: 10px auto;
+    float: none;
+  }
+
+  /* line 183, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .extras {
+    display: table;
+    margin: 0 auto;
+  }
+
+  /* line 184, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .radiobox {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+
+  /* line 185, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .srch, .btn {
+    margin-top: 0;
+  }
+
+  /* line 186, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .logo {
+    width: 50%;
+  }
+
+  /* line 187, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 188, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .app-btns {
+    margin: 36px 6px 0;
+  }
+
+  /* line 189, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .videop {
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    width: auto;
+    float: none;
+  }
+
+  /* line 190, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .info {
+    width: 94%;
+    margin-top: 0;
+    padding: 20px 3%;
+    height: auto;
+  }
+
+  /* line 191, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #more, #more #container {
+    width: 100%;
+    float: none;
+  }
+
+  /* line 192, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .coments {
+    width: 96%;
+    padding: 10px 2%;
+    background: #053D69;
+    float: none;
+  }
+
+  /* line 193, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #container.seccion {
+    width: 548px;
+  }
+
+  /* line 194, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .galeria {
+    width: 100%;
+  }
+
+  /* line 195, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .audios, .audios img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 198, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .sidebar {
+    margin: 13px 0 13px 0;
+    padding: 20px 0;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  /* line 199, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #container.seccion {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 200, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  #container.seccion {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 203, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .wrap {
+    width: 100%;
+  }
+
+  /* line 204, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .menumedia ul {
+    font-size: 9px;
+  }
+
+  /* line 205, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .logo {
+    margin: 0 auto;
+    float: none;
+  }
+
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  /* line 210, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .buscador {
+    width: 173px;
+  }
+
+  /* line 211, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+  .srch {
+    display: block;
+    width: 60%;
+  }
+}
+/* line 214, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+div.video_options {
+  position: relative;
+}
+
+/* line 217, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+div.video_options a.skip_ad {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 12px;
+  display: none;
+}
+
+/* line 224, /Users/oskrnav/projects/rails_heroku/mceghub/app/assets/stylesheets/style.css.scss */
+div.video_options a.skip_ad span {
+  display: block;
+  padding: 5px;
+  background: rgba(118, 0, 0, 0.85);
+  color: #ffffff;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
