@@ -37,12 +37,12 @@ gem 'font-awesome-rails', '~> 4.2.0.0'
   gem 'spring'
 
   # Use Capistrano for deployment
-gem 'capistrano', '~> 3.1.0'
-gem 'capistrano-bundler', '~> 1.1.2'
-gem 'capistrano-rails', '~> 1.1.1'
+#gem 'capistrano', '~> 3.1.0'
+#gem 'capistrano-bundler', '~> 1.1.2'
+#gem 'capistrano-rails', '~> 1.1.1'
 
 # Add this if you're using rbenv
- gem 'capistrano-rbenv', github: "capistrano/rbenv"
+# gem 'capistrano-rbenv', github: "capistrano/rbenv"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
