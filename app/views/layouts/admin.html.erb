@@ -11,7 +11,7 @@
 
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
- <%= stylesheet_link_tag    'admin', media: 'all'%>
+ <%= stylesheet_link_tag    'admin', media: 'all' , 'data-turbolinks-track' => true%>
     <!-- Custom Fonts -->
   
     <!-- Bootstrap Core CSS -->
@@ -370,7 +370,8 @@
 
     <!-- jQuery Version 1.11.0 -->
 
-   <%= javascript_include_tag 'admin' %>
+   <%= javascript_include_tag 'admin' ,'data-turbolinks-track' => true%>
+   
    <%= yield :js %>
 </body>
 
