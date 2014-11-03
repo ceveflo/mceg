@@ -4,10 +4,15 @@ class Archive < ActiveRecord::Base
 	has_many :media_files
 	self.table_name =  "archive"
 	mount_uploader :imageCDN, FimageUploader
+	after_update :save_media
+
+	before_create :create_slug 
+	after_create :create_youtube
+
+	attr_accessor :url_file , :youtubeField
 
 
-	
-	
+
 	def self.getType(slug , category = nil , nlimit = 100 , page = 0)
 
 		page = page.to_i * nlimit
@@ -33,5 +38,33 @@ class Archive < ActiveRecord::Base
 		end
 		 a = a.where("media_type = ?" , tipo).order("date_publication DESC").limit(nlimit).offset(page)		
  		
+	end
+
+	private
+
+	def save_media
+		unless self.url_file.blank?
+			media = MediaFile.find_by archive_id:self.id
+			media.update_attribute('url_file' , self.url_file)
+		end
+	end
+
+	def create_youtube
+		if self.youtubeField
+			media = MediaFile.new
+			media.url_file = parse_youtube self.url_file
+			media.url_type = 'Y'
+			media.description = ' '
+			media.archive_id = self.id
+			media.save
+		end
+	end
+	def parse_youtube url
+	   regex = /(?:.be\/|\/watch\?v=|\/(?=p\/))([\w\/\-]+)/
+	   url.match(regex)[1]
+	end
+
+	def create_slug
+		self.slug_name = self.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
 	end
 end

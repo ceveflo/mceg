@@ -1,11 +1,17 @@
 module PageHelper
 
 	def blank_image(item)
-	  if item.image.blank?
-	 	 "default-audio.jpg"
+		
+	  if !item.imageCDN.blank?
+	  	item.imageCDN
 	  else
-	    item.image
-	  end
+	  	if !item.image.blank?
+	  		item.image
+	  	else
+	  		"default-audio.jpg"	
+	  	end	
+	  end	
+
 	end
 
 	def type_archive(item)
@@ -20,6 +26,8 @@ module PageHelper
 
 
 	end
+
+	
 
 
 	def is_destacado(destacado , item)

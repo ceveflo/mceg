@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'admin/index'
+  get 'admin' => 'admin#index' , as:'adminhome' 
 
   get 'export/brigtcove'
 
@@ -42,7 +42,16 @@ Rails.application.routes.draw do
 
    get 'admin/loadtable'
 
-  # Example of regular route:
+   get 'admin/nuevo_archivo' => 'admin#newMedia' , as:'newMedia'
+
+   post 'admin/save_archive' => 'admin#saveArchive' , as:'saveArchive'
+
+   get 'admin/edit_media/:id_media' => 'admin#editMedia' , as:'editMedia'
+
+   patch 'admin/update_archive/:id' => 'admin#updateArchive', as:'updateArchive'
+    
+   get 'admin/delete_media/:id' => 'admin#deleteMedia' , as:'deleteMedia' 
+     # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

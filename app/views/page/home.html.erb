@@ -6,10 +6,10 @@
 		<% if !params[:tag].blank?%>
 		<p class="tag-busqueda">Tag: <strong><%= params[:tag] %></strong><br>
 			<% if params[:tag] == "cafecondonrobert" %>
-				<%= image_tag "BANNERS3.jpg" %>
+				<%= image_tag "BANNERS3.jpg" , class:'img-responsive' %>
 			<% end %>
 			<% if params[:tag] == "elgraficotv" %>
-				<%= image_tag "BANNERS2.jpg" %>
+				<%= image_tag "BANNERS2.jpg" , class:'img-responsive' %>
 			<% end %>
 		</p>
 			

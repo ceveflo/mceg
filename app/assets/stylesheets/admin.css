@@ -4,4 +4,5 @@
 *= require 'sb-admin-2.css'
 *= require 'font-awesome'
 *= require 'plugins/dataTables.bootstrap.css'
+*= require 'jquery-ui.css'
 */

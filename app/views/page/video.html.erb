@@ -16,8 +16,11 @@
 <div class="wrap">
     <div class="videop">
         <!-- video bightcove -->
+        <% if @video.media_files[0].url_type == 'Y' %>
+            <%= render partial: "ytplayer" , locals: { video_id: @video.media_files[0].url_file } %>
+        <% else %>
         <%= render partial: "playerbrightcove" , locals: { video_id: @video.media_files[0].url_file } %>
-      
+        <% end %>
         <!-- end -->
 
     </div>
