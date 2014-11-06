@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-<title>Media Center El Grafico - <%= yield :headtitle%>) </title>
+<title>Media Center El Grafico  <%= yield :headtitle%> </title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -104,7 +104,12 @@ function schemeLocal() {
       <noscript><a href="http://ads.us.e-planning.net/ei/3/ad66/mediacenter/giga_banner?it=i&rnd=$RANDOM" target="_blank"><img width="728" height="90"  alt="e-planning.net ad" src="http://ads.us.e-planning.net/eb/3/ad66/mediacenter/giga_banner?o=i&rnd=$RANDOM" border="0" > </a> </noscript>
   </div>
 <div class="extras">
-  <div class="radiobox"><a href="#">GD radio</a></div>
+  <div class="gd-radio-box"> 
+  <img src="http://104.130.128.242/production/assets/circle-music-8d0d2c47fc1e7fcdddec116430b2de67.png" width="37" height="38" alt="">
+  <span class="gd-radio-text"> 
+    <a href="http://radio.grupodutriz.com/" target="_blank">GD radio</a>
+  </span>
+</div>
   <div class="buscador" id="pageSearchBox">
      <script type="text/javascript">
         $(function(){
@@ -149,22 +154,51 @@ function schemeLocal() {
     <div class="wrap">
      <nav>
 				<ul>
-                	<li><a href="#">HOME</a>
-                    	<ul>
-                            <li><a href="#">LINK 1</a></li>
-                            <li><a href="#">LINK 2</a></li>
-                            <li><a href="#">LINK 3</a></li>
-                            <li><a href="#">LINK 4</a></li>
-                            <li><a href="#">LINK 5</a></li>
-                        </ul>
-                    </li>
-					<li><a href="#">Fútbol</a></li>
-					<li><a href="#">Selecciones</a></li>
-					<li><a href="#">Ligas</a></li>
-                    <li><a href="#">+Deportes</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Estadísticas</a></li>
-                    <li><a href="#">Opinión</a></li>
+                <li class="active"><a href="http://elgrafico.com/inicio">Inicio</a></li>
+<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fútbol</a>
+  <ul class="dropdown-menu">
+  <li><a href="http://elgrafico.com/Tag/primera division/12867">Primera</a></li>
+  <li><a href="http://elgrafico.com/Tag/segunda division/12939">Segunda</a></li>
+  <li><a href="http://elgrafico.com/Tag/tercera division/12887">Tercera</a></li>
+  </ul>
+</li>
+<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Selecciones</a>
+  <ul class="dropdown-menu">
+  <li><a href="http://elgrafico.com/Tag/seleccion/4284">Mayor</a></li>
+  <li><a href="http://elgrafico.com/Tag/Seleccion de Playa/12951">Playera</a></li>
+  <li><a href="http://elgrafico.com/Tag/Juveniles/7865">Juveniles</a></li>
+  </ul>
+</li>
+<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ligas</a>
+  <ul class="dropdown-menu">
+  <li><a href="http://elgrafico.com/Tag/liga española/12943">Española</a></li>
+  <li><a href="http://elgrafico.com/Tag/liga inglesa/12947">Inglesa</a></li>
+  <li><a href="http://elgrafico.com/Tag/liga italiana/12907">Italiana</a></li>
+  <li><a href="http://elgrafico.com/Tag/otras ligas/12950">Otras ligas</a></li>
+  </ul>
+</li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">+ Deportes</a>
+  <ul class="dropdown-menu">
+  <li><a href="http://elgrafico.com/Tag/gama nacional/12952">Nacional</a></li>
+  <li><a href="http://elgrafico.com/Tag/gama internacional/12954">Internacional</a></li>
+  </ul>          
+</li>
+<li class="dropdown"> <a href="http://104.130.128.242/" target="_blank" class="dropdown-toggle" data-toggle="dropdown">Media</a>
+  <ul class="dropdown-menu">
+  <li><a href="http://mediacenter.elgrafico.com/tag/cafecondonrobert" target="_blank">Un café con don Robert</a></li>
+  <li><a href="http://mediacenter.elgrafico.com/tag/elgraficotv" target="_blank">El Gráfico TV</a></li>
+  <li><a href="http://mediacenter.elgrafico.com/guiriguirialaire" target="_blank">GUIRI GUIRI AL AIRE</a></li>
+  </ul>
+</li>
+<li class="dropdown"><a href="#">Estadísticas</a>
+  <ul class="dropdown-menu">
+  <li><a href="http://elgrafico.com/Estadisticas/primera">PRIMERA</a></li>
+  <li><a href="http://elgrafico.com/Estadisticas/segunda">SEGUNDA</a></li>
+  <li><a href="http://elgrafico.com/Estadisticas/tercera">TERCERA</a></li>            
+  </ul>          
+</li>
+<li><a href="http://elgrafico.com/Opinion">Opinión</a></li>
+                 
 				</ul>
 			</nav>
 			<a href="#" id="navbtn">Menú</a>   </div>

@@ -159,6 +159,94 @@ header { border-top: 24px solid #272d34; background: #464646;}
 #playlist li a:hover{text-decoration:none; background:#333; color:#09F;}
 #playlist li { list-style:none;}
 .tag-busqueda { font-size:24px; text-align:center; color:#fff; display:table; line-height:38px; background:#053D69; border-radius:5px; margin:0 auto; padding:5px 10px; margin-top:20px;}
+/* =============================================== 	update 6 - 11 - 14 by ceveflo	=========================================*/
+	.wrap::before,
+.wrap::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+ul.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: nowrap;
+}
+header{
+	border-bottom: 4px solid #004168;
+}
+header .extras{
+	float: left;
+	padding: 16px 0 18px 30px;
+}
+.ad728 {
+	padding: 16px 0 15px 0;
+}
+#topnav{
+	border-bottom: 2px solid #e7e7e7;
+}
+.gd-radio-box {
+background: #fff;
+width: 194px;
+height: 36px;
+border-radius: 50px;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+-ie-border-radius: 50px;
+-o-border-radius: 50px;
+box-shadow: 1px 2px 5px #000 inset;
+-o-box-shadow: 1px 2px 5px #000 inset !important;
+-ie-box-shadow: 1px 2px 5px #000 inset !important;
+-moz-box-shadow: 1px 2px 5px #000 inset !important;
+-webkit-box-shadow: 1px 2px 5px #000 inset !important;
+text-align: left;
+/* float: left; */
+vertical-align: top;
+}
+.gd-radio-text {
+	text-transform: uppercase;
+	margin-top: 0px;
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 38px;
+	width: 150px;
+	vertical-align: top;
+}
+.gd-radio-text a, .radio-search-top a:not(.btn) {
+	color: #a3a3a3;
+	width: 100%;
+	display: block;
+	text-indent: -10px;
+	text-align: center;
+	text-decoration: none;
+}
+/* end */ 
 @media screen and (max-width : 1240px) {
 /*body{overflow:auto;}*/
 }
