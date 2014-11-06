@@ -159,6 +159,12 @@ header { border-top: 24px solid #272d34; background: #464646;}
 #playlist li a:hover{text-decoration:none; background:#333; color:#09F;}
 #playlist li { list-style:none;}
 .tag-busqueda { font-size:24px; text-align:center; color:#fff; display:table; line-height:38px; background:#053D69; border-radius:5px; margin:0 auto; padding:5px 10px; margin-top:20px;}
+.discovery-post h3 {
+	color: #22a7f0
+}
+.dark .discovery-post .top-comment .user {
+	color: #19b5fe;
+}
 /* =============================================== 	update 6 - 11 - 14 by ceveflo	=========================================*/
 .wrap::before,
 .wrap::after{
