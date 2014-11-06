@@ -160,11 +160,12 @@ header { border-top: 24px solid #272d34; background: #464646;}
 #playlist li { list-style:none;}
 .tag-busqueda { font-size:24px; text-align:center; color:#fff; display:table; line-height:38px; background:#053D69; border-radius:5px; margin:0 auto; padding:5px 10px; margin-top:20px;}
 /* =============================================== 	update 6 - 11 - 14 by ceveflo	=========================================*/
-	.wrap::before,
+.wrap::before,
 .wrap::after{
 	content:'';
 	display:block;
 	clear:both;
+
 }
 ul.dropdown-menu {
     position: absolute;
@@ -186,7 +187,8 @@ ul.dropdown-menu {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     background-clip: padding-box;
 }
-.dropdown-menu>li>a {
+.dropdown-menu{
+	>li>a {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -194,6 +196,7 @@ ul.dropdown-menu {
     line-height: 1.428571429;
     color: #333;
     white-space: nowrap;
+}
 }
 header{
 	border-bottom: 4px solid #004168;
