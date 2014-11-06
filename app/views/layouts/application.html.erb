@@ -99,18 +99,54 @@ function schemeLocal() {
 <body>
 <header>
 <div class="wrap">
-<div class="ad ad728">
-	<script type="text/javascript">eplAD4M("giga_banner");</script><noscript><a href="http://ads.us.e-planning.net/ei/3/ad66/mediacenter/giga_banner?it=i&rnd=$RANDOM" target="_blank"><img width="728" height="90"  alt="e-planning.net ad" src="http://ads.us.e-planning.net/eb/3/ad66/mediacenter/giga_banner?o=i&rnd=$RANDOM" border=0></a></noscript>
-
-
+  <div class="ad ad728">
+    	<script type="text/javascript"> eplAD4M("giga_banner"); </script>
+      <noscript><a href="http://ads.us.e-planning.net/ei/3/ad66/mediacenter/giga_banner?it=i&rnd=$RANDOM" target="_blank"><img width="728" height="90"  alt="e-planning.net ad" src="http://ads.us.e-planning.net/eb/3/ad66/mediacenter/giga_banner?o=i&rnd=$RANDOM" border="0" > </a> </noscript>
+  </div>
 <div class="extras">
-<div class="radiobox"><a href="#">GD radio</a></div>
-<div class="buscador">
-<input type="text" class="form-control srch" placeholder="Buscar">
-<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></div>
-</div></div>
+  <div class="radiobox"><a href="#">GD radio</a></div>
+  <div class="buscador" id="pageSearchBox">
+     <script type="text/javascript">
+        $(function(){
+          (function( $ ){
+          var obj = $('#pageSearchBox'),    
+            btn = $('button[type=submit]',obj),
+            input = $('input[type=text]',obj),
+            search = '',
+            query = '',
+            url = "http://mediacenter.laprensagrafica.com/search/";
+          $(btn).click(function(){
+            sendData()
+          });
+          $(input).keyup(function(event){
+            if(event.keyCode == 13){
+              sendData();
+            }
+          });
+          function sendData(){
+            search = $(input).val();
+            if($.trim(search).length > 0){
+            search = encodeData(search);
+            query = "?busqueda="+search;
+            window.location.href = url + query;
+            }
+          }
+          function encodeData(val){
+            var value = encodeURIComponent(val);
+            return value;
+          }
+          })( jQuery )
+        });
+      </script> 
+    <input type="text" class="form-control srch" placeholder="Buscar">
+    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+  </div>
+</div>
+
+
+</div>
 <div id="topnav">
-<div class="wrap">
+    <div class="wrap">
      <nav>
 				<ul>
                 	<li><a href="#">HOME</a>
@@ -131,7 +167,8 @@ function schemeLocal() {
                     <li><a href="#">Opinión</a></li>
 				</ul>
 			</nav>
-			<a href="#" id="navbtn">Menú</a>   </div></div>
+			<a href="#" id="navbtn">Menú</a>   </div>
+  </div>
 </header>
 
  <!-- div content -->

@@ -33,6 +33,7 @@ gem "carrierwave"
 gem "fog"
 gem "mini_magick"
 gem 'font-awesome-rails', '~> 4.2.0.0'
+gem 'brightcove-api'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 

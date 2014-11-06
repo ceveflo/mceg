@@ -10,7 +10,8 @@ class PageController < ApplicationController
   end
 
   
-
+  def search
+  end
   def load_section
 
       

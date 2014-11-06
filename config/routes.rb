@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get 'page/audio'
 
+  get '/search' => 'page#search' , as:'search'
   #get 'page/videos'
 
   get 'guiriguirialaire' => 'page#guiriguiri'  , as:'guiri'

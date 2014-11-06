@@ -65,6 +65,8 @@ class Archive < ActiveRecord::Base
 	end
 
 	def create_slug
-		self.slug_name = self.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+		if self.slug_name.blank?
+			self.slug_name = self.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+		end
 	end
 end
