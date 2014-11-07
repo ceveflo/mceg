@@ -18,7 +18,6 @@ class ExportController < ApplicationController
 
 	 			  arecord = Archive.find(record.archive_id)
 	 			  archive = arecord.update_attributes(hash)
-
   				else
   					fecha  = Time.at((item['creationDate'].to_i/1000))#(item['creationDate']/1000)
   					hash = {
@@ -39,14 +38,15 @@ class ExportController < ApplicationController
 	 				}
 
 	 				archive = Archive.new(hash)
-begin	 				
+ 				
+begin 					
 		 			if archive.save	
-		 				imghash = {'url_file'=>item['id'] , 'url_type'=>'B' , 'description'=>item['shortDescription'] , 'archive_id'=>record.id}
+		 				imghash = {'url_file'=>item['id'] , 'url_type'=>'B' , 'description'=>item['shortDescription'] , 'archive_id'=>archive.id}
 		 				mediafile = MediaFile.new(imghash)
 		 				mediafile.save
 		 			end
-rescue 		 			
-end		 			
+rescue
+end 		 			
   				end
   				
   			end
