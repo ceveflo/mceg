@@ -1,4 +1,5 @@
 class ExportController < ApplicationController
+# grupodutriz.com
   def brigtcove
   			data = Sourceinfo.new
   			info  = data.brightcoveinfo()
@@ -49,7 +50,7 @@ end
   				end
   				
   			end
-  			render text:hash
+  			render text:'ok'
   end
 
   def gnweb
@@ -125,7 +126,7 @@ end
   			
   		end
 
-  		render :text=>title
+  		render :text=>'ok'
   end
 
   def audio
