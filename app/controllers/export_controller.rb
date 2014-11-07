@@ -31,7 +31,7 @@ class ExportController < ApplicationController
 	 				'num_comment'=>0,
 	 				'oldID'=>0,
 	 				'oldFolder'=>" ",
-	 				 'media_tag'=>item['tags'].join(",") , 
+	 				 'media_tag'=>item['tags'].join(",") ,  
 	 				  'channel_id'=>2,
 	 				  'category_id'=>0,
 	 				  'media_type'=>'V'
