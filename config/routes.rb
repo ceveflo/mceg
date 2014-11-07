@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'export/brigtcove'
 
   get 'export/gnweb/:tipo' =>'export#gnweb' , as:'exportgnweb'
+  get 'export/audio/:tipo' =>'export#audio' , as:'exportaudio'
 
   get 'export/oneBrighcove/:slug' => 'export#oneBrighcove' , as:'oneBrighcove'
 
