@@ -1,3 +1,5 @@
+require 'uri'
+
 module PageHelper
 
 	def blank_image(item)
@@ -27,7 +29,12 @@ module PageHelper
 
 	end
 
-	
+	def getFilename(url)
+
+		uri = URI.parse(url)
+
+		File.basename(uri.path)
+	end
 
 
 	def is_destacado(destacado , item)

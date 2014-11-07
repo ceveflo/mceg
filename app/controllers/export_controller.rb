@@ -119,7 +119,7 @@ end
 
 	 				pathimage = p.css('subitems child')
 	 				pathimage.each do |image|
-	 					imghash = {'url_file'=>image.css('image').text , 'url_type'=>'G' , 'description'=>image.css('caption').text , 'archive_id'=>record.id}
+	 					imghash = {'url_file'=>(image.css('image').text).strip() , 'url_type'=>'G' , 'description'=>image.css('caption').text , 'archive_id'=>record.id}
 	 					mediafile = MediaFile.new(imghash)
 	 					mediafile.save
 	 				
@@ -148,7 +148,7 @@ end
 	 			if archive.save	
 	 				pathimage = p.css('subitems child')
 	 				pathimage.each do |image|
-	 					imghash = {'url_file'=>image.css('image').text , 'url_type'=>'G' , 'description'=>image.css('caption').text , 'archive_id'=>archive.id}
+	 					imghash = {'url_file'=>(image.css('image').text).strip() , 'url_type'=>'G' , 'description'=>image.css('caption').text , 'archive_id'=>archive.id}
 	 					mediafile = MediaFile.new(imghash)
 	 					mediafile.save
 	 				end
@@ -173,7 +173,10 @@ end
   		
   		var = ""
   		title = ""
+  		
+
   		path.each do |p|
+  			unless (p.css('type').text).strip() =='Video' 
   			title = (p.css('headline').text).strip()
   			record = Archive.where("title = ? and media_type = ? " , title , tipo).first
 			fecha = DateTime.parse(p.css("date").text).strftime("%Y-%m-%d %H:%M:%S")	  			
@@ -194,13 +197,13 @@ end
 	 			archive = record.update_attributes(hash)
 	 				MediaFile.where(:archive_id => record.id).destroy_all
 
-	 				pathimage = p.css('subitems child')
-	 				pathimage.each do |image|
-	 					imghash = {'url_file'=>image.css('image').text , 'url_type'=>'G' , 'description'=>image.css('caption').text , 'archive_id'=>record.id}
+	 				#pathimage = p.css('subitems child')
+	 				
+	 					imghash = {'url_file'=>(p.css('mediafile').text).strip() , 'url_type'=>'G' , 'description'=>p.css('headline').text , 'archive_id'=>record.id}
 	 					mediafile = MediaFile.new(imghash)
 	 					mediafile.save
 	 				
-	 			end
+	 		
   			else 
 	 			#si es nuevo record
 	 			
@@ -222,17 +225,17 @@ end
 	 				  'media_type'=>tipo
 	 				}
 	 			archive = Archive.new(hash)
-	 			#if archive.save	
-	 				pathimage = p.css('subitems child')
+	 			if archive.save	
+	 				#pathimage = p.css('subitems child')
 	 				#pathimage.each do |image|
-	 				#	imghash = {'url_file'=>image.css('image').text , 'url_type'=>'G' , 'description'=>image.css('caption').text , 'archive_id'=>archive.id}
-	 				#	mediafile = MediaFile.new(imghash)
-	 				#	mediafile.save
+	 					imghash = {'url_file'=>(p.css('mediafile').text).strip() , 'url_type'=>'G' , 'description'=>p.css('headline').text , 'archive_id'=>archive.id}
+	 					mediafile = MediaFile.new(imghash)
+	 					mediafile.save
 	 				#end
-	 		#	end
+	 			end
 
   			end
-
+end
 
   			
   		end
