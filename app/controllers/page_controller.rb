@@ -67,7 +67,7 @@ class PageController < ApplicationController
      now = Date.today
     tree = (now - 3)
     @video = Archive.find_by slug_name:params[:slug]
-    @related = Archive.where("media_tag like ? " , @video.media_tag).order("rand()").limit(7)
+    @related = Archive.where("media_tag like ? and date_publication > 2014-08-01" , @video.media_tag).order("rand()").limit(7)
     @destacado = Archive.select("id").where("date_publication >= ? " , tree).order("num_views DESC").limit(10)
   end
 
@@ -76,7 +76,7 @@ class PageController < ApplicationController
     now = Date.today
     tree = (now - 3)
     @video = Archive.find_by slug_name:params[:slug]
-    @related = Archive.where("media_tag like ? " , @video.media_tag).order("rand()").limit(7)
+    @related = Archive.where("media_tag like ? and date_publication > 2014-08-01" , @video.media_tag).order("rand()").limit(7)
     @destacado = Archive.select("id").where("date_publication >= ? " , tree).order("num_views DESC").limit(10)
   end
 
@@ -85,7 +85,7 @@ class PageController < ApplicationController
      now = Date.today
     tree = (now - 3)
     @video = Archive.find_by slug_name:params[:slug]
-    @related = Archive.where("media_tag like ? " , @video.media_tag).order("rand()").limit(7) rescue nil
+    @related = Archive.where("media_tag like ? and date_publication > 2014-08-01" , @video.media_tag).order("rand()").limit(7) rescue nil
      @destacado = Archive.select("id").where("date_publication >= ? " , tree).order("num_views DESC").limit(10)
   end
 
