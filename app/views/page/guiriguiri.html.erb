@@ -7,7 +7,7 @@
 			<%= image_tag 'banners1.jpg' %>
 		<div id="wrapper">			
 			<audio preload="auto" controls>
-				<source src="<%=  @archive[0].media_files[0].url_file rescue nil %>">
+				<source src="http://mediacenter.elgrafico.com.php53-22.dfw1-2.websitetestlink.com/files/audios/guiriguiri/<%=  getFilename @archive[0].media_files[0].url_file rescue nil %>">
 			</audio>
 
 		<ul id="playlist">
