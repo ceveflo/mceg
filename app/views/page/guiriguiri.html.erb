@@ -13,7 +13,7 @@
 		<ul id="playlist">
 			<% @archive.each do |item| %>
 		        <li class="active">
-		            <a href="<%= item.media_files[0].url_file%>">
+		            <a href="http://mediacenter.elgrafico.com.php53-22.dfw1-2.websitetestlink.com/files/audios/guiriguiri/<%=  getFilename item.media_files[0].url_file%>">
 		                <%= item.title %>
 		            </a>
 		        </li>
