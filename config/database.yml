@@ -13,13 +13,13 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password: w3lcom3
-  host: 127.0.0.1
+  username: mculpg
+  password: HHga8723k3e++
+  host: 174.143.186.98
 
 development:
   <<: *default
-  database: mceg
+  database: mcEG
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

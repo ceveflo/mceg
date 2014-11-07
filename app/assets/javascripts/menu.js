@@ -17,7 +17,7 @@ $(function(){
   }); 
   
   $('#topnav nav a,#topnav h1 a,#btmnav nav a').on('click', function(e){
-    e.preventDefault(); // detener todos
+    //e.preventDefault(); // detener todos
   });
   
   $('#navbtn').on('click', function(e){

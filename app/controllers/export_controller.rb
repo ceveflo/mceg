@@ -39,14 +39,13 @@ class ExportController < ApplicationController
 
 	 				archive = Archive.new(hash)
  				
-begin 					
+					
 		 			if archive.save	
 		 				imghash = {'url_file'=>item['id'] , 'url_type'=>'B' , 'description'=>item['shortDescription'] , 'archive_id'=>archive.id}
 		 				mediafile = MediaFile.new(imghash)
 		 				mediafile.save
 		 			end
-rescue
-end 		 			
+	 			
   				end
   				
   			end
