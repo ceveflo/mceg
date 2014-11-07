@@ -165,6 +165,12 @@ header { border-top: 24px solid #272d34; background: #464646;}
 .dark .discovery-post .top-comment .user {
 	color: #19b5fe;
 }
+
+     
+  #layout #disqus_thread ul.discovery-posts a.publisher-anchor-color{ color:#fff !important;}
+
+  #disqus_thread a { color: #FF9101;}
+
 /* =============================================== 	update 6 - 11 - 14 by ceveflo	=========================================*/
 .wrap::before,
 .wrap::after{
