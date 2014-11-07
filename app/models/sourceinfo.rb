@@ -26,4 +26,12 @@ data = JSON.load(open("http://api.brightcove.com/services/library?command=search
 
 end
 
+def brightcoveinfobyid(bid)
+
+data = JSON.load(open("http://api.brightcove.com/services/library?command=find_video_by_id&token=1lI7eegjganW_lTrfk4BwUPQMlWMVQGt2niK3dCFUk210VqYUVYgxg..&video_id=#{bid}&video_fields=videoStillURL"))
+
+  json = data
+
+end
+
 end

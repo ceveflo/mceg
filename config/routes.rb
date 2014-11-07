@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   get 'export/gnweb/:tipo' =>'export#gnweb' , as:'exportgnweb'
 
+  get 'export/oneBrighcove/:slug' => 'export#oneBrighcove' , as:'oneBrighcove'
+
+  get 'export/manyBrighcove/:id' => 'export#manyBrighcove' , as:'manyBrighcove'
+
   get 'export/audio'
 
   get 'page/home'

@@ -1,5 +1,34 @@
 class ExportController < ApplicationController
 # grupodutriz.com
+
+  def oneBrighcove
+  	 archive = Archive.find_by slug_name:params[:slug]
+  	 media = MediaFile.find_by archive_id:archive.id
+  	 data = Sourceinfo.new
+  	 b = data.brightcoveinfobyid(media.url_file)
+  	 archive.update_attribute('image' , b['videoStillURL'])
+  	 render text:'ok'
+
+  end
+
+  def manyBrighcove
+  	 id = 0
+  	 archive = Archive.where("id < ? and media_type = 'V' " , params[:id]).order(' id DESC').limit(50)
+
+  	 archive.each do |item| 
+
+	  	 media = MediaFile.find_by archive_id:item.id
+
+	  	 data = Sourceinfo.new
+ 	  	 
+	  	 b = data.brightcoveinfobyid(media.url_file)
+	  	 item.update_attribute('image' , b['videoStillURL']) rescue nil
+	  	 id = item.id
+  	end 
+  	 render text:id
+
+  end
+
   def brigtcove
   			data = Sourceinfo.new
   			info  = data.brightcoveinfo()
