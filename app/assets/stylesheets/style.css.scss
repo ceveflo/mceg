@@ -334,6 +334,14 @@ div.video_options a.skip_ad span{
 	width:100%;
 	height:auto;
 }
+.rg-image img {
+max-height: 640px;
+}
+
+.es-carousel ul li a img {
+height: 70px;
+margin: 0 auto;
+}
 @media screen and (max-width: 1090px){
     .extras{
         display:none;
