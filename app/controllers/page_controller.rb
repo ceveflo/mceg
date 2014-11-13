@@ -12,6 +12,10 @@ class PageController < ApplicationController
   
   def search
   end
+
+  def envivo
+      @player = params[:link]
+  end
   def load_section
 
       

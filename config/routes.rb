@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'page/audio'
 
+
+  get '/envivo/:link' => 'page#envivo' , as:'envivo'
   get '/search' => 'page#search' , as:'search'
   #get 'page/videos'
 

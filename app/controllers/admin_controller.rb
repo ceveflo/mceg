@@ -12,6 +12,8 @@ class AdminController < ApplicationController
   		#render json:tabla
   end
 
+  
+
   def newMedia
   		@archive = Archive.new
   		@categories = Category.where('channel_id = 2')

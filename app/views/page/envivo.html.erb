@@ -1,0 +1,56 @@
+<% content_for :metaheader  do %>
+    <meta property="og:title" content="Mediacenter El Gráfico - <%= @player%>"/>
+        <meta property="og:description" content="Mediacenter El Gráfico <%= @player%>"/>
+       
+       
+<% end %>
+<% content_for :headtitle  do %>
+    En Vivo - <%= @player %>
+<% end %>
+
+<div class="content">
+
+    <%= render partial:"header"%>
+
+
+<div class="wrap">
+    <div class="videop">
+        <!-- video bightcove -->
+                <%=raw envivoPlayer(@player)%>
+        <!-- end -->
+
+    </div>
+    <!-- End of Brightcove Player -->
+    <div class="video_options">
+
+    <div class="info">
+    <h2></h2>
+    <p id="tags_p">
+    
+    </p>
+    <span class='st_sharethis_hcount' displayText='ShareThis'></span>
+    <span class='st_facebook_hcount' displayText='Facebook'></span>
+    <span class='st_twitter_hcount' displayText='Tweet'></span>
+    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+    <span class='st_pinterest_hcount' displayText='Pinterest'></span>
+    <span class='st_email_hcount' displayText='Email'></span>
+    </div>
+    <div class="clearfix"></div>
+    <div class="azul">
+    <div class="coments">
+        
+    </div>
+    <div id="more">
+    <div id="container">
+
+            
+    </div>
+    </div>
+
+
+    </div>
+
+</div>
+
+
+</div>
