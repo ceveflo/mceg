@@ -32,7 +32,7 @@ es:
     - sábado
     formats:
       default: ! '%d/%m/%Y'
-      long: ! '%d de %B de %Y'
+      long: ! '%A , %d %B %Y %H:%M:%S %Z'
       short: ! '%a %d de %b'
     month_names:
     -

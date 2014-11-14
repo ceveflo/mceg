@@ -7,4 +7,11 @@ class RssController < ApplicationController
 			   format.rss { render :layout => false }
 			end
 	end
+
+	def itunes
+			@archive = Archive.getType('Audios' ,'guiriguirialaire', 25)
+			respond_to do |format|
+			   format.xml { render :layout => false }
+			end
+	end
 end

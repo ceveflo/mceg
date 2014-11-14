@@ -58,7 +58,9 @@ Rails.application.routes.draw do
 
    patch 'admin/update_archive/:id' => 'admin#updateArchive', as:'updateArchive'
     
-   get 'admin/delete_media/:id' => 'admin#deleteMedia' , as:'deleteMedia' 
+   get 'admin/delete_media/:id' => 'admin#deleteMedia' , as:'deleteMedia'
+
+   get 'utils/gdradio' => 'rss#itunes' , as:'itunes' 
      # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
