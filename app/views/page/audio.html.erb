@@ -19,7 +19,7 @@
 		<%= image_tag @video.image %>
 <div id="wrapper">
 		  <audio preload="auto" controls>
-				<source src="http://mediacenter.elgrafico.com.php53-22.dfw1-2.websitetestlink.com/files/audios/guiriguiri/<%=  getFilename @video.media_files[0].url_file%>">
+				<source src="<%= @video.media_files[0].url_file%>">
 			
 			</audio>
 			
