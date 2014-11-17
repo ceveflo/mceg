@@ -56,9 +56,10 @@ module PageHelper
 
 	def getFilename(url)
 
-		uri = URI.parse(url)
+		#uri = URI.parse(url)
 
-		File.basename(uri.path)
+		#File.basename(uri.path)
+		url
 	end
 
 
