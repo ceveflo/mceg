@@ -17,6 +17,8 @@ module PageHelper
 	end
 
 
+	
+
 	def envivoPlayer(player)
 			case player
 			when 'transmision1'
