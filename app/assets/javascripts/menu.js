@@ -21,7 +21,7 @@ $(function(){
   });
   
   $('#navbtn').on('click', function(e){
-    e.preventDefault();
+    
     $("#topnav nav").slideToggle(350);
   });
   
