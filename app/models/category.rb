@@ -17,7 +17,7 @@ class Category < ActiveRecord::Base
 
 	def self.searchCat(categoria,tipo)
 		strsearch = categoria.gsub("MC", "").strip()
-		cat = self.where("name = ? and seccion = ? " , strsearch , tipo)
+		cat = self.where("tag = ? and seccion = ? " , strsearch , tipo)
 		cat = cat[0]
 		if cat
 		 	cat.id
