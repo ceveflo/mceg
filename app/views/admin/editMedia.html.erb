@@ -51,7 +51,16 @@
                                               <%= f.text_field :url_file , class:'form-control' , value:@mediafile[0].url_file rescue nil%>
                                               <!-- <p class="help-block">Example block-level help text here.</p> -->
                                            </div>
+
                                            <% end %>
+                                            <% if @archive.media_type == 'V' %>
+                                              <div class="form-group">
+                                              <label>Type Video </label>
+                                              
+                                                    <%= f.select :url_type , options_for_select([['Youtube' , 'Y'] , ['Brightcove' , 'B']] , @mediafile[0].url_type ),  {} , {class:'form-control'}%>
+                                              <!-- <p class="help-block">Example block-level help text here.</p> -->
+                                              </div>
+                                            <% end %>
                                        		 <div class="form-group">
 	                                            <%= f.submit 'Guardar' , class:'btn btn-large btn-info'%>
 	                                            <!-- <p class="help-block">Example block-level help text here.</p> -->

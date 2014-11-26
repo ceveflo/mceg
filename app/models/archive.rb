@@ -9,7 +9,7 @@ class Archive < ActiveRecord::Base
 	before_create :create_slug 
 	after_create :create_youtube
 
-	attr_accessor :url_file , :youtubeField
+	attr_accessor :url_file , :youtubeField , :url_type
 
 
 
@@ -46,6 +46,10 @@ class Archive < ActiveRecord::Base
 		unless self.url_file.blank?
 			media = MediaFile.find_by archive_id:self.id
 			media.update_attribute('url_file' , self.url_file)
+		end
+		unless self.url_type.blank?
+			media = MediaFile.find_by archive_id:self.id
+			media.update_attribute('url_type' , self.url_type)
 		end
 	end
 

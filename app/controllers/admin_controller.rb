@@ -74,7 +74,7 @@ class AdminController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def archive_params
-      params.require(:archive).permit(:youtubeField , :category_id , :url_file , :channel_id , :title , :imageCDN, :media_type , :date_publication , :media_tag )
+      params.require(:archive).permit(:youtubeField , :category_id , :url_file , :url_type , :channel_id , :title , :imageCDN, :media_type , :date_publication , :media_tag )
     end
 
 end
