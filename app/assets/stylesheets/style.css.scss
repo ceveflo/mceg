@@ -35,7 +35,7 @@ header { border-top: 24px solid #272d34; background: #464646;}
 .clearfix {clear:both;}
 /* wrapper css */
 #wrapper{width:100%; margin-top:-3px;}
-#container{position:relative;width:980px;padding-bottom:10px;margin:0 auto 25px;max-width:100%;}
+#container{position:relative;width:980px;padding-bottom:10px;margin:0 auto 25px;}
 .grid{width:225px;min-height:100px;background:#00182B;font-size:12px;float:left;box-shadow:0 1px 3px rgba(34,25,25,0.4);-moz-box-shadow:0 1px 3px rgba(34,25,25,0.4);-webkit-box-shadow:0 1px 3px rgba(34,25,25,0.4);-webkit-transition:top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;-moz-transition:top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;-o-transition:top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;-ms-transition:top 1s ease, left 1s ease, background .3s ease-in-out, opacity .3s ease-in-out;margin:4px;padding:2px 2px 7px; color:#FFF;}
 .grid a.link{border-bottom:1px solid #13507F;display:block;font-size:12px;margin:10px 0;padding:0 5px 5px 26px; color:#FFF; text-decoration:none; text-align:left; text-transform:uppercase;}
 .grid:hover {background: #053D69;}
@@ -179,6 +179,12 @@ header { border-top: 24px solid #272d34; background: #464646;}
 	clear:both;
 
 }
+
+.logo.hidden,
+.logo.hidden > *{
+	display:none;
+}
+
 ul.dropdown-menu {
     position: absolute;
     top: 100%;
@@ -288,10 +294,6 @@ vertical-align: top;
 .srch, .btn { margin-top:0;}
 .logo { width:50%;}
 .logo img{ width:100%; height:auto;}
-.logo.hidden,
-.logo.hidden > *{
-	display:none;
-}
 .app-btns {margin: 36px 6px 0;}
 .videop{padding-bottom: 56.25%; /* 16:9 */padding-top: 25px;height: 0;width:auto; float:none}
 .info {width: 94%;margin-top: 0;padding: 20px 3%;height: auto; }
