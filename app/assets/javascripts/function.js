@@ -35,7 +35,7 @@ do_on_load = function() {
 	$(window).resize(function() {
 		winWidth = $(window).width();
 		if(winWidth != currentWidth) {
-			currentWidth = conWidth;
+			currentWidth = winWidth;
 			$('#container').width(conWidth);
 			repage()
 		}
