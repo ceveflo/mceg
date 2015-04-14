@@ -1,21 +1,13 @@
 var do_on_load;
 var repage;
+var winWidth;
+var conWidth;
 do_on_load = function() {
 
 	repage =  function() {
-		$('#container').BlocksIt({
-			numOfCol: 3,
-			offsetX: 8,
-			offsetY: 8
-		});
-	};
-	
-	
-	//window resize
-	var currentWidth = 760;
-	$(window).resize(function() {
-		var winWidth = $(window).width();
-		var conWidth;
+
+		winWidth = $(window).width();
+		conWidth;
 		if(winWidth < 481) {
 			conWidth = 320;
 			col = 1
@@ -26,22 +18,31 @@ do_on_load = function() {
 			conWidth = 548;
 			col = 3;
 		} else {
-			conWidth = 760;
+			conWidth = 980;
 			col = 4;
 		}
-		
+
+		$('#container').BlocksIt({
+			numOfCol: col,
+			offsetX: 8,
+			offsetY: 8
+		});
+	};
+	
+	
+	//window resize
+	var currentWidth = 980;
+	$(window).resize(function() {
+		winWidth = $(window).width();
+		conWidth;
 		if(conWidth != currentWidth) {
 			currentWidth = conWidth;
 			$('#container').width(conWidth);
-			$('#container').BlocksIt({
-				numOfCol: col,
-				offsetX: 8,
-				offsetY: 8
-			});
+			repage()
 		}
 	});
 
-	$(window).load(repage)
+	$(window).load(repage);
 	
 };
 
