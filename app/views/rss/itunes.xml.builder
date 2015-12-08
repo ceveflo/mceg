@@ -24,7 +24,7 @@ xml.xml :version => '2.0', 'xmlns:itunes'=>'http://www.itunes.com/dtds/podcast-1
             xml.tag!("itunes:subtitle" ,item.title)
             xml.tag!("itunes:summary" , item.media_files[0].description)
             xml.tag!("itunes:image" , {"href"=>"#{request.protocol}#{request.host_with_port}#{asset_path('EG2014GUIRITUNES.png')}"})
-            xml.tag!("itunes:duration" lenght, 
+            xml.tag!("itunes:duration", lenght)
             xml.tag!("itunes:keywords" , item.media_tag)
             xml.tag!("guid" ,  {"isPermalink"=>true}  , item.media_files[0].url_file)
             xml.tag!("enclosure" , { "url"=>item.media_files[0].url_file , "length"=>lenght , "type"=>"audio/mpeg"})
