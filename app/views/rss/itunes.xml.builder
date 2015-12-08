@@ -17,7 +17,7 @@ xml.xml :version => '2.0', 'xmlns:itunes'=>'http://www.itunes.com/dtds/podcast-1
 
     for item in @archive
         xml.item do 
-            lenght = tagmedia(item.media_files[0].url_file , item.category.id))
+            lenght = tagmedia(item.media_files[0].url_file , item.category.id)
             xml.title item.title
             xml.pubDate l(item.date_publication , format: :long)
             xml.tag!("itunes:author","El Grafico")
