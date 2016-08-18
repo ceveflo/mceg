@@ -18,15 +18,18 @@
         <!-- video bightcove -->
         <% if @video.media_files[0].url_type == 'Y' %>
             <%= render partial: "ytplayer" , locals: { video_id: @video.media_files[0].url_file } %>
-        <% else %>
-        <%= render partial: "playerbrightcove" , locals: { video_id: @video.media_files[0].url_file } %>
+        <% elsif @video.media_files[0].url_type == 'B' %>        
+            <%= render partial: "playerbrightcove" , locals: { video_id: @video.media_files[0].url_file } %>
+        <% elsif @video.media_files[0].url_type == 'M' %>
+            <%= render partial: "playerMVP" , locals: { video_id: @video.media_files[0].url_file } %>
         <% end %>
         <!-- end -->
 
     </div>
     <!-- End of Brightcove Player -->
     <div class="video_options">
-<a href="javascript:void(0)" onclick="detener()" class="skip_ad" style="displa:none"><span>Saltar Publicidad</span></a></div>
+        <a href="javascript:void(0)" onclick="detener()" class="skip_ad" style="displa:none"><span>Saltar Publicidad</span></a>
+    </div>
     <div class="info">
     <h2><%= @video.title%></h2>
     <p id="tags_p">
