@@ -17,4 +17,5 @@
 public/files
 
 # Ignore the DataBase file
-/config/bkdbdata
+config/bkdbdata.txt
+config/database.yml

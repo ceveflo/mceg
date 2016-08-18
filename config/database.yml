@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: x
   password: x
-  host: x
+  host: xs
 
 development:
   <<: *default
